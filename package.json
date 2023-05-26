@@ -1,0 +1,15 @@
+{
+  "name": "innovatex-project",
+  "version": "1.0.0",
+  "description": "Create a quiz maker that will allow users to create a quiz and then the quiz will be displayed to the user.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hint": "^7.1.8"
+  }
+}
