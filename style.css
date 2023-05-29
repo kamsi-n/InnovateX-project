@@ -17,7 +17,7 @@ nav {
 }
 
 .logo h3 {
-  font-size: 30px;
+  font-size: 3.5vw;
   margin-right: -40px;
   width: 180px;
   height: 41.28px;
@@ -37,7 +37,7 @@ ul li a {
   text-decoration: none;
   color: #333;
   padding: 5px;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .startQuiz {
@@ -46,10 +46,10 @@ ul li a {
   background-color: transparent;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.563vw;
   line-height: 120%;
   position: relative;
-  padding: 10px 20px;
+  padding: 0.781vw 1.563vw;
   border-radius: 4px;
   cursor: pointer;
   margin-left: -30px;
@@ -79,7 +79,7 @@ ul li a {
   padding: 5px;
   margin-right: 10px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.406vw;
   line-height: 21px;
 }
 
@@ -87,8 +87,8 @@ ul li a {
   background-color: rgba(114, 9, 183, 0.1);
   color: #7209b7;
   border: none;
-  font-size: 20px;
-  padding: 10px 20px;
+  font-size: 1.563vw;
+  padding: 0.781vw 1.563vw;
   border-radius: 4px;
   cursor: pointer;
   margin-right: -16px;
@@ -97,4 +97,8 @@ ul li a {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.options {
+  display: none;
 }
