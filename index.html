@@ -23,13 +23,59 @@
                 <li><a href="#">Quiz</a></li>
                 <li><a href="#">Plan</a></li>
             </ul>
-            <button class="startQuiz" type="button">Start Quiz</button>
             <div class="signIn">
                 <p>Already have an account?</p>
                 <button class="signInBtn" type="button">Sign In</button>
             </div>
         </nav>
     </header>
+    <hr>
+    <div class="container">
+        <form action="">
+            <img class="profilePic" src="./assests/user.png" alt="">
+            <h2>Create your account</h2>
+            <p class="signUpDesc">We need this information in order to complete your account</p>
+            
+            <div class="slot">
+                <label class="ut"><b>Username</b></label>
+                <input type="text" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="slot">
+                <label class="et"><b>Email</b></label>
+                <input type="text" name="emailAddress" placeholder="Enter email address" required>
+            </div>
+
+            <div class="slot">
+                <label class="pt"><b>Password</b></label>
+                <input id="password" type="text" name="password" placeholder="Enter password" required>
+                <div id="passwordChecker">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+            </div>
+            
+            <button class="signUpBtn">Sign Up</button>
+        </form>
     
+
+        <div class="signUpAlt">
+            <div class="line1"></div>
+            <p class="signUpAltP">Or Sign up with</p>
+            <div class="line2"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContent">
+            <p class="p1">All rights reserved @ 2023 QuizWhiz</p>
+            <p class="p2">Privacy | Terms</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

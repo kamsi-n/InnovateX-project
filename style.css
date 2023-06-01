@@ -26,7 +26,7 @@ nav {
 ul {
   list-style-type: none;
   display: flex;
-  margin-right: -250px;
+  margin-right: -25px;
 }
 
 ul li {
@@ -37,27 +37,7 @@ ul li a {
   text-decoration: none;
   color: #333;
   padding: 5px;
-  font-size: 2vw;
-}
-
-.startQuiz {
-  color: #7209b7;
-  border: 1px solid #7209b7;
-  background-color: transparent;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.563vw;
-  line-height: 120%;
-  position: relative;
-  padding: 0.781vw 1.563vw;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: -30px;
-}
-
-.startQuiz:hover {
-  background-color: #7209b7;
-  color: white;
+  font-size: 1.406vw;
 }
 
 .signIn {
@@ -65,7 +45,6 @@ ul li a {
   display: flex;
   flex-direction: row;
   margin-left: -170px;
-  padding-right: 100px;
 }
 
 .signIn button:hover {
@@ -99,6 +78,206 @@ ul li a {
   gap: 10px;
 }
 
-.options {
-  display: none;
+hr {
+  border: 1px solid #7109b715;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  background-color: transparent;
+  position: absolute;
+  width: 40%;
+  height: 80vh;
+  left: 25%;
+  margin: 20px;
+  padding: 30px;
+  box-shadow: -1px 1px 10px 5px rgba(63, 63, 63, 0.199);
+}
+
+img {
+  width: 64px;
+  height: 64px;
+}
+
+h2 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.signUpDesc {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.et {
+    margin-right: 40px;
+}
+
+input {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    border: 0.6px solid #9B9B9B;
+    border-radius: 4px;
+    color: black;
+    background-color: #f3f5f7;
+    width: 35vw;
+    height: 3.5vw;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.slot {
+    margin-top: 15px;
+}
+
+.signUpBtn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 3.5vw;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7209B7;
+    border: 0.6px solid #9B9B9B;
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.one {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 20%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.two {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 20%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.three {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 20%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.four {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 20%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.five {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 20%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#passwordChecker {
+  display: flex;
+}
+
+.strength {
+  width: 25%;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  background-color: black;
+}
+
+.signUpAlt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpAltP {
+  color: #9B9B9B;
+  font-size: 15px;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+
+.line1 {
+  background-color: #7209b7;
+  width: 10vw;
+  height: 1px;
+}
+
+.line2 {
+  background-color: #7209b7;
+  width: 10vw;
+  height: 1px;
+}
+
+footer {
+  position: relative;
+  top: 100vh;
+  padding: 10px;
+  font-size: 1.406vw;
+  color: black;
+  cursor: pointer;
+}
+
+.footerContent {
+  display: flex;
+  margin-left: 25%;
+  text-align: center;
+  font-family: 'roboto', sans-serif;
+}
+
+.p2 {
+  margin-left: 150px;
 }
