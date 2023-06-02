@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   position: relative;
   padding: 20px;
@@ -18,7 +22,8 @@ nav {
 
 .logo h3 {
   font-size: 3.5vw;
-  margin-right: -40px;
+
+  /* margin-right: -40px; */
   width: 180px;
   height: 41.28px;
 }
@@ -26,7 +31,8 @@ nav {
 ul {
   list-style-type: none;
   display: flex;
-  margin-right: -25px;
+
+  /* margin-right: -25px; */
 }
 
 ul li {
@@ -70,7 +76,8 @@ ul li a {
   padding: 0.781vw 1.563vw;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: -16px;
+
+  /* margin-right: -16px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,7 +190,7 @@ input {
 #poor {
   background-color: #dcdcdc;
   height: 5px;
-  width: 20%;
+  width: 50%;
   margin-top: 5px;
   position: relative;
   border-radius: 5px;
@@ -192,7 +199,7 @@ input {
 #weak {
   background-color: #dcdcdc;
   height: 5px;
-  width: 20%;
+  width: 50%;
   margin-top: 5px;
   position: relative;
   border-radius: 5px;
@@ -201,7 +208,7 @@ input {
 #strong {
   background-color: #dcdcdc;
   height: 5px;
-  width: 20%;
+  width: 50%;
   margin-top: 5px;
   position: relative;
   border-radius: 5px;
@@ -256,6 +263,13 @@ input {
 .google {
   width: 30px;
   height: 30px;
+  z-index: 2;
+}
+
+.google:hover {
+  background-color: #7209b7;
+  z-index: 1;
+  padding: 5px;
 }
 
 .facebook {
@@ -269,20 +283,22 @@ input {
 }
 
 #animation1 {
-  background-color: #7209b7;
+  background-color: transparent;
   position: absolute;
-  width: 20%;
-  height: 30%;
+  width: 30%;
+  height: 40%;
   bottom: -22%;
+  z-index: 1;
 }
 
 .animation2 {
-  background-color: palevioletred;
+  background-color: transparent;
   position: absolute;
-  width: 20%;
-  height: 30%;
+  width: 30%;
+  height: 40%;
   bottom: -22%;
   right: 0;
+  z-index: 1;
 }
 
 footer {
@@ -294,7 +310,7 @@ footer {
   font-size: 1.406vw;
   color: black;
   cursor: pointer;
-  background-color: transparent;
+  background-color: white;
 }
 
 .footerContent {
