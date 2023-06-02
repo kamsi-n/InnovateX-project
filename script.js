@@ -10,7 +10,7 @@ const weakRegExp = /(?=.*?[0-9])/;
 const strongRegExp = /(?=.*?[#?!@$%^&*_])/;
 const whitespaceRegExp = /^$|\s+/;
 
-passwordInput.addEventListener('input', function () {
+passwordInput.addEventListener('input', () => {
   const passwordValue = passwordInput.value;
   const passwordLength = passwordValue.trim().length;
 
@@ -19,12 +19,6 @@ passwordInput.addEventListener('input', function () {
   const strongPassword = passwordValue.match(strongRegExp);
 
   const whitespace = passwordValue.match(whitespaceRegExp);
-
-  console.log("passwordValue:", passwordValue);
-  console.log("passwordLength:", passwordLength);
-  console.log("poorPassword:", poorPassword);
-  console.log("weakPassword:", weakPassword);
-  console.log("strongPassword:", strongPassword);
 
   function poorPasswordStrength(passwordLength, poorPassword, weakPassword, strongPassword) {
     if (passwordLength <= 3 && (poorPassword || weakPassword || strongPassword)) {
@@ -54,8 +48,8 @@ passwordInput.addEventListener('input', function () {
       poor.classList.add('active');
       weak.classList.add('active');
       strong.classList.add('active');
-      passwordInfo.style.color = 'green';
-      strong.style.backgroundColor = 'green';
+      passwordInfo.style.color = 'rgb(46, 238, 46)';
+      strong.style.backgroundColor = 'rgb(46, 238, 46)';
       passwordInfo.textContent = 'Your password is strong';
     } else {
       strong.classList.remove('active');
