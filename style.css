@@ -94,7 +94,7 @@ form {
   background-color: transparent;
   position: absolute;
   width: 40%;
-  height: 80vh;
+  height: 90%;
   left: 25%;
   margin: 20px;
   padding: 30px;
@@ -159,7 +159,7 @@ input {
   margin-top: 15px;
 }
 
-.signUpBtn {
+#signUpBtn {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -180,7 +180,7 @@ input {
   cursor: pointer;
 }
 
-.one {
+#poor {
   background-color: #dcdcdc;
   height: 5px;
   width: 20%;
@@ -189,7 +189,7 @@ input {
   border-radius: 5px;
 }
 
-.two {
+#weak {
   background-color: #dcdcdc;
   height: 5px;
   width: 20%;
@@ -198,25 +198,7 @@ input {
   border-radius: 5px;
 }
 
-.three {
-  background-color: #dcdcdc;
-  height: 5px;
-  width: 20%;
-  margin-top: 5px;
-  position: relative;
-  border-radius: 5px;
-}
-
-.four {
-  background-color: #dcdcdc;
-  height: 5px;
-  width: 20%;
-  margin-top: 5px;
-  position: relative;
-  border-radius: 5px;
-}
-
-.five {
+#strong {
   background-color: #dcdcdc;
   height: 5px;
   width: 20%;
@@ -262,13 +244,57 @@ input {
   height: 1px;
 }
 
-footer {
+.signUpSocials {
+  display: flex;
   position: relative;
-  top: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 25px;
+}
+
+.google {
+  width: 30px;
+  height: 30px;
+}
+
+.facebook {
+  width: 30px;
+  height: 30px;
+}
+
+.twitter {
+  width: 30px;
+  height: 30px;
+}
+
+#animation1 {
+  background-color: #7209b7;
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  bottom: -22%;
+}
+
+.animation2 {
+  background-color: palevioletred;
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  bottom: -22%;
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 10px;
   font-size: 1.406vw;
   color: black;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .footerContent {
