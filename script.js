@@ -72,6 +72,12 @@ passwordInput.addEventListener('input', () => {
   } else {
     passwordChecker.style.display = 'none';
     passwordInfo.style.display = 'none';
+    poor.style.backgroundColor = '';
+    weak.style.backgroundColor = '';
+    strong.style.backgroundColor = '';
+    poor.classList.remove('active');
+    weak.classList.remove('active');
+    strong.classList.remove('active');
   }
 });
 
