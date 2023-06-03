@@ -48,8 +48,8 @@ passwordInput.addEventListener('input', () => {
       poor.classList.add('active');
       weak.classList.add('active');
       strong.classList.add('active');
-      passwordInfo.style.color = 'rgb(46, 238, 46)';
-      strong.style.backgroundColor = 'rgb(46, 238, 46)';
+      passwordInfo.style.color = 'green';
+      strong.style.backgroundColor = 'green';
       passwordInfo.textContent = 'Your password is strong';
     } else {
       strong.classList.remove('active');
@@ -74,3 +74,54 @@ passwordInput.addEventListener('input', () => {
     passwordInfo.style.display = 'none';
   }
 });
+
+const showHideToggle = document.getElementById('showHideToggle');
+
+showHideToggle.addEventListener('click', () => {
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    showHideToggle.textContent = 'Hide';
+  } else {
+    passwordInput.type = 'password';
+    showHideToggle.textContent = 'Show';
+  }
+});
+
+const showHideToggle2 = document.getElementById('showHideToggle2');
+const passwordInput2 = document.getElementById('confirmPassword');
+
+showHideToggle2.addEventListener('click', () => {
+  if (passwordInput2.type === 'password') {
+    passwordInput2.type = 'text';
+    showHideToggle2.textContent = 'Hide';
+  } else {
+    passwordInput2.type = 'password';
+    showHideToggle2.textContent = 'Show';
+  }
+});
+
+const confirmPasswordInput = document.getElementById('confirmPassword');
+const passwordMatchMessage = document.getElementById('passwordMatchMessage');
+const signUpButton = document.getElementById('signUpBtn');
+
+confirmPasswordInput.addEventListener('input', () => {
+  const passwordValue = passwordInput.value;
+  const confirmPasswordValue = confirmPasswordInput.value;
+
+  if (confirmPasswordValue === '') {
+    confirmPasswordInput.setCustomValidity('');
+    passwordMatchMessage.textContent = '';
+    submitButton.disabled = false;
+  } else if (passwordValue === confirmPasswordValue) {
+    confirmPasswordInput.setCustomValidity('');
+    passwordMatchMessage.textContent = 'Passwords match!';
+    passwordMatchMessage.style.color = 'green';
+    submitButton.disabled = false;
+  } else {
+    confirmPasswordInput.setCustomValidity("Passwords don't match.");
+    passwordMatchMessage.textContent = "Passwords don't match.";
+    passwordMatchMessage.style.color = 'red';
+    submitButton.disabled = true;
+  }
+});
+
