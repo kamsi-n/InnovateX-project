@@ -131,3 +131,8 @@ confirmPasswordInput.addEventListener('input', () => {
   }
 });
 
+document.getElementById('toggleBtn').addEventListener('click', function() {
+  var navbar = document.getElementById('navbarItems');
+  navbarItems.classList.toggle('show');
+  navbarItems.classList.toggle('hide');
+});

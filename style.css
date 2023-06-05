@@ -20,6 +20,19 @@ nav {
   align-items: center;
 }
 
+#toggleBtn {
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 35%;
+}
+
+#toggleBtn img {
+  width: 40px;
+  height: 30px;
+}
+
 .logo h3 {
   font-size: 3.5vw;
 
@@ -99,12 +112,13 @@ form {
 
 .container {
   background-color: transparent;
-  position: absolute;
+  position: relative; 
   width: 40%;
-  height: 105%;
+  min-height: 120%; 
   left: 25%;
   margin: 20px;
   padding: 30px;
+  margin-bottom: 100px;
   box-shadow: -1px 1px 10px 5px rgba(63, 63, 63, 0.199);
 }
 
@@ -293,24 +307,18 @@ input::placeholder {
 }
 
 .google {
-  width: 30px;
-  height: 30px;
-}
-
-.google:hover {
-  background-color: #7209b7;
-  z-index: 1;
-  padding: 5px;
+  width: 5%;
+  height: 7%;
 }
 
 .facebook {
-  width: 30px;
-  height: 30px;
+  width: 5%;
+  height: 7%;
 }
 
 .twitter {
-  width: 30px;
-  height: 30px;
+  width: 5%;
+  height: 7%;
 }
 
 #animation1 {
@@ -353,4 +361,42 @@ footer {
 
 .p2 {
   margin-left: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 10%;
+    background-color: rgba(114, 9, 183, 0.1);
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 45%;
+  }
+
+  #toggleBtn {
+    visibility: visible;
+    position: relative;
+    margin-left: 45%;
+    text-align: center;
+    
+  }
+
+  #navbarItems{
+    display: block;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #navbarItems.hide {
+    display: none;
+  }
 }
