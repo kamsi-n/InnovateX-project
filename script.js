@@ -117,22 +117,22 @@ confirmPasswordInput.addEventListener('input', () => {
   if (confirmPasswordValue === '') {
     confirmPasswordInput.setCustomValidity('');
     passwordMatchMessage.textContent = '';
-    submitButton.disabled = false;
+    signUpButton.disabled = false;
   } else if (passwordValue === confirmPasswordValue) {
     confirmPasswordInput.setCustomValidity('');
     passwordMatchMessage.textContent = 'Passwords match!';
     passwordMatchMessage.style.color = 'green';
-    submitButton.disabled = false;
+    signUpButton.disabled = false;
   } else {
     confirmPasswordInput.setCustomValidity("Passwords don't match.");
     passwordMatchMessage.textContent = "Passwords don't match.";
     passwordMatchMessage.style.color = 'red';
-    submitButton.disabled = true;
+    signUpButton.disabled = true;
   }
 });
 
-document.getElementById('toggleBtn').addEventListener('click', function() {
-  var navbar = document.getElementById('navbarItems');
+document.getElementById('toggleBtn').addEventListener('click', () => {
+  const navbarItems = document.getElementById('navbarItems');
   navbarItems.classList.toggle('show');
   navbarItems.classList.toggle('hide');
 });

@@ -112,9 +112,9 @@ form {
 
 .container {
   background-color: transparent;
-  position: relative; 
+  position: relative;
   width: 40%;
-  min-height: 120%; 
+  min-height: 120%;
   left: 25%;
   margin: 20px;
   padding: 30px;
@@ -122,7 +122,7 @@ form {
   box-shadow: -1px 1px 10px 5px rgba(63, 63, 63, 0.199);
 }
 
-img {
+.profilePic {
   width: 64px;
   height: 64px;
 }
@@ -177,11 +177,7 @@ input {
 }
 
 input::placeholder {
-  color: #7C7C7C;
-}
-
-#showHideToggle:hover {
-  cursor: pointer;
+  color: #7c7c7c;
 }
 
 #password {
@@ -189,14 +185,18 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 }
-  
+
 #showHideToggle {
   float: right;
   margin-left: -10px;
   margin-top: -25px;
   position: relative;
   cursor: pointer;
-  color: #7C7C7C;
+  color: #7c7c7c;
+}
+
+#showHideToggle:hover {
+  cursor: pointer;
 }
 
 #showHideToggle2 {
@@ -205,7 +205,11 @@ input::placeholder {
   margin-top: -25px;
   position: relative;
   cursor: pointer;
-  color: #7C7C7C;
+  color: #7c7c7c;
+}
+
+#showHideToggle2:hover {
+  cursor: pointer;
 }
 
 .slot {
@@ -335,10 +339,9 @@ footer {
     position: relative;
     margin-left: 45%;
     text-align: center;
-    
   }
 
-  #navbarItems{
+  #navbarItems {
     display: block;
     cursor: pointer;
   }
