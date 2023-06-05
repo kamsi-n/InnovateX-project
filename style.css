@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   position: relative;
   padding: 20px;
@@ -16,9 +20,23 @@ nav {
   align-items: center;
 }
 
+#toggleBtn {
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 35%;
+}
+
+#toggleBtn img {
+  width: 40px;
+  height: 30px;
+}
+
 .logo h3 {
   font-size: 3.5vw;
-  margin-right: -40px;
+
+  /* margin-right: -40px; */
   width: 180px;
   height: 41.28px;
 }
@@ -26,7 +44,8 @@ nav {
 ul {
   list-style-type: none;
   display: flex;
-  margin-right: -250px;
+
+  /* margin-right: -25px; */
 }
 
 ul li {
@@ -37,27 +56,7 @@ ul li a {
   text-decoration: none;
   color: #333;
   padding: 5px;
-  font-size: 20px;
-}
-
-.startQuiz {
-  color: #7209b7;
-  border: 1px solid #7209b7;
-  background-color: transparent;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.563vw;
-  line-height: 120%;
-  position: relative;
-  padding: 0.781vw 1.563vw;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: -30px;
-}
-
-.startQuiz:hover {
-  background-color: #7209b7;
-  color: white;
+  font-size: 1.406vw;
 }
 
 .signIn {
@@ -65,7 +64,6 @@ ul li a {
   display: flex;
   flex-direction: row;
   margin-left: -170px;
-  padding-right: 100px;
 }
 
 .signIn button:hover {
@@ -91,7 +89,8 @@ ul li a {
   padding: 0.781vw 1.563vw;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: -16px;
+
+  /* margin-right: -16px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,6 +98,259 @@ ul li a {
   gap: 10px;
 }
 
-.options {
-  display: none;
+hr {
+  border: 1px solid #7109b715;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  background-color: transparent;
+  position: relative;
+  width: 40%;
+  min-height: 120%;
+  left: 25%;
+  margin: 20px;
+  padding: 30px;
+  margin-bottom: 100px;
+  box-shadow: -1px 1px 10px 5px rgba(63, 63, 63, 0.199);
+}
+
+.profilePic {
+  width: 64px;
+  height: 64px;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.signUpDesc {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.et {
+  margin-right: 40px;
+}
+
+input {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  border: 0.6px solid #9b9b9b;
+  border-radius: 4px;
+  color: black;
+  background-color: #f3f5f7;
+  width: 35vw;
+  height: 3.5vw;
+  font-size: 18px;
+  padding: 10px;
+}
+
+input::placeholder {
+  color: #7c7c7c;
+}
+
+#password {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+#showHideToggle {
+  float: right;
+  margin-left: -10px;
+  margin-top: -25px;
+  position: relative;
+  cursor: pointer;
+  color: #7c7c7c;
+}
+
+#showHideToggle:hover {
+  cursor: pointer;
+}
+
+#showHideToggle2 {
+  float: right;
+  margin-left: -10px;
+  margin-top: -25px;
+  position: relative;
+  cursor: pointer;
+  color: #7c7c7c;
+}
+
+#showHideToggle2:hover {
+  cursor: pointer;
+}
+
+.slot {
+  margin-top: 15px;
+}
+
+#signUpBtn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 3.5vw;
+  color: white;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7209b7;
+  border: 0.6px solid #9b9b9b;
+  border-radius: 8px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  cursor: pointer;
+}
+
+#poor {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 50%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#weak {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 50%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#strong {
+  background-color: #dcdcdc;
+  height: 5px;
+  width: 50%;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#passwordChecker {
+  display: flex;
+}
+
+.strength {
+  width: 25%;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  background-color: black;
+}
+
+#animation1 {
+  background-color: transparent;
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  bottom: -22%;
+  z-index: 1;
+}
+
+.animation2 {
+  background-color: transparent;
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  bottom: -22%;
+  right: 0;
+  z-index: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.406vw;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+
+.footerContent {
+  display: flex;
+  margin-left: 25%;
+  text-align: center;
+  font-family: 'roboto', sans-serif;
+}
+
+.p2 {
+  margin-left: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 10%;
+    background-color: rgba(114, 9, 183, 0.1);
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 45%;
+  }
+
+  #toggleBtn {
+    visibility: visible;
+    position: relative;
+    margin-left: 45%;
+    text-align: center;
+  }
+
+  #navbarItems {
+    display: block;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #navbarItems.hide {
+    display: none;
+  }
 }
