@@ -272,55 +272,6 @@ input::placeholder {
   background-color: black;
 }
 
-.signUpAlt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.signUpAltP {
-  color: #9b9b9b;
-  font-size: 15px;
-  padding: 0 10px;
-  margin-top: 5px;
-}
-
-.line1 {
-  background-color: #7209b7;
-  width: 10vw;
-  height: 1px;
-}
-
-.line2 {
-  background-color: #7209b7;
-  width: 10vw;
-  height: 1px;
-}
-
-.signUpSocials {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  gap: 25px;
-}
-
-.google {
-  width: 5%;
-  height: 7%;
-}
-
-.facebook {
-  width: 5%;
-  height: 7%;
-}
-
-.twitter {
-  width: 5%;
-  height: 7%;
-}
-
 #animation1 {
   background-color: transparent;
   position: absolute;
