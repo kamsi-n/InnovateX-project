@@ -222,6 +222,24 @@ hr {
   z-index: -1;
 }
 
+.brands {
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+}
+
+.brands img {
+  margin: 20px 30px;
+  width: 12.5%;
+  height: 2%;
+  filter: contrast(1.2) brightness(1.1);
+}
+
 @media screen and (max-width: 768px) {
   ul {
     display: flex;
@@ -240,8 +258,8 @@ hr {
 
   #toggleBtn {
     visibility: visible;
-    position: fixed;
-    left: 40%;
+    position: relative;
+    right: 20%;
   }
 
   #navbarItems {
@@ -291,5 +309,9 @@ hr {
   .CQ,
   .SQ {
     font-size: 10px;
+  }
+
+  .brands {
+    top: 450px;
   }
 }
