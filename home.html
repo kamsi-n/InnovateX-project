@@ -5,26 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizWhiz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header> 
         <nav>
             <div class="logo">
                 <h3>QuizWhiz</h3>
             </div>
+            <button id="toggleBtn"><img src="./assests/menu (2).png" alt=""></button>
+            <div id="navbarItems" class="hide">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Quiz</a></li>
-                <li><a href="#">Plan</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+            </div>
             <div class="signIn">
-                <p>Already have an account?</p>
-                <button class="signInBtn" type="button">Sign In</button>
+                <button class="HP-SignInBtn">Sign In</button>
+                <button class="HP-SignUpBtn" type="button">Sign Up</button>
             </div>
         </nav>
     </header>
 
-    <script src="script.js"></script>
+    <hr>
+
+    <section id="sec1">
+        <img class="elipses1" src="./assests/Ellipse 2315.svg" alt="">
+        <div class="s1-icon">
+            <img class="s1-iconImg" src="./assests/completed-steps.svg" alt="">
+        </div>
+        <div class="s1-desc">
+            <h1>Everyone can <span>create</span>
+                <br>quizzes using our 
+                <br>smart quiz builder.</h1>
+            <p>QuizWhiz is a web-based quiz application that provides a fun and interactive way to test your knowledge. With new quiz content added regularly, there's something for everyone to enjoy! Test your skills and become a QuizWhiz today!</p>
+           
+            <div class="quizBtns">
+                <button class="CQ">Create Quiz</button>
+                <button class="SQ">Start Quiz</button>
+           </div> 
+        </div>
+    </section>
+
+    <script src="home.js"></script>
 </body>
 </html>

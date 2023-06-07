@@ -285,8 +285,7 @@ input::placeholder {
   z-index: 1;
 }
 
-.animation2 {
-  background-color: transparent;
+#animation2 {
   position: absolute;
   width: 30%;
   height: 40%;
