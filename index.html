@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,41 @@
     <title>InnovateX Project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        
+
         <nav>
             <div class="logo">
                 <h3>QuizWhiz</h3>
             </div>
-            <button id="toggleBtn"><img src="./assests/menu (2).png" alt=""></button>
+            <button id="toggleBtn"><img src="./assets/menu (2).png" alt=""></button>
             <div id="navbarItems" class="hide">
-            <ul>
-                <li><a href="http://127.0.0.1:3000/home.html">Home</a></li>
-                <li><a href="#">Quiz</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
             <div class="signIn">
                 <p>Already have an account?</p>
                 <button class="signInBtn" type="button">Sign In</button>
             </div>
-            
+
         </nav>
     </header>
     <hr>
     <div class="container">
         <form action="">
-            <img class="profilePic" src="./assests/User icon.png" alt="">
+            <img class="profilePic" src="./assets/User icon.png" alt="">
             <h2>Create your account</h2>
             <p class="signUpDesc">We need this information in order to complete your account</p>
-            
+
             <div class="slot">
                 <label class="ut"><b>Username</b></label>
                 <input type="text" name="username" placeholder="Enter your username" required>
@@ -62,21 +64,21 @@
                 </div>
                 <p id="passwordInfo"></p>
             </div>
-            
+
             <div class="slot">
                 <label class="pt"><b>Confirm Password</b></label>
                 <input id="confirmPassword" type="password" name="password" placeholder="Re-enter password" required>
                 <span id="showHideToggle2">Show</span>
                 <p id="passwordMatchMessage"></p>
             </div>
-            
-           <button type="submit" id="signUpBtn">Sign Up</button>
+
+            <button type="submit" id="signUpBtn">Sign Up</button>
         </form>
     </div>
 
-    <img id="animation1" src="./assests/svg animated files/Property 1=Variant4 (1).svg" alt="">
-    <img id="animation2" src="./assests/svg animated files/Property 1=Level 5.svg" alt="">
-    
+    <div id="animation1"></div>
+    <div id="animation2"></div>
+
     <footer>
         <div class="footerContent">
             <p class="p1">All rights reserved @ 2023 QuizWhiz</p>
@@ -86,4 +88,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

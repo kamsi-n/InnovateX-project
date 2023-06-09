@@ -56,6 +56,12 @@ ul li a {
   font-size: 1.406vw;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #7209b7;
+  text-decoration-thickness: 2px;
+}
+
 .signIn {
   position: relative;
   display: flex;
@@ -64,8 +70,7 @@ ul li a {
 }
 
 .signIn button:hover {
-  background-color: #7209b7;
-  color: white;
+  border: #7209b7 1px solid;
 }
 
 .signIn p {
@@ -99,6 +104,7 @@ ul li a {
   color: white;
   border: none;
   font-size: 1.563vw;
+  text-decoration: none;
   padding: 0.781vw 1.563vw;
   border-radius: 4px;
   cursor: pointer;
@@ -125,12 +131,15 @@ hr {
   grid-template-rows: 100%;
 }
 
-.s1-icon {
-  width: 50vw;
+#svg-container {
+  position: relative;
+  background-color: transparent;
   height: 60vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 10px;
 }
 
 .s1-desc {
@@ -141,20 +150,11 @@ hr {
   justify-content: center;
 }
 
-.s1-iconImg {
-  max-width: 60%;
-  margin-right: 20%;
-}
-
 .s1-desc h1 {
   color: #280340;
   font-size: 3.5vw;
   font-family: 'roboto', sans-serif;
   margin: 10px;
-}
-
-.s1-desc span {
-  color: orange;
 }
 
 .s1-desc p {
@@ -185,6 +185,7 @@ hr {
   font-weight: 500;
   font-size: 1.3vw;
   line-height: 120%;
+  cursor: pointer;
 }
 
 .SQ {
@@ -201,17 +202,15 @@ hr {
   font-weight: 500;
   font-size: 1.3vw;
   line-height: 120%;
+  cursor: pointer;
 }
 
 .SQ:hover {
-  background-color: #5b0792;
-  color: white;
+  border: 1px solid #5b0792;
 }
 
 .CQ:hover {
-  background-color: white;
-  color: #5b0792;
-  border: 1px solid #7209b7;
+  background-color: #7209b7;
 }
 
 .elipses1 {
@@ -223,7 +222,7 @@ hr {
 }
 
 .brands {
-  background-color: none;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -312,6 +311,7 @@ hr {
   }
 
   .brands {
-    top: 450px;
+    top: 180%;
+    margin: 20px;
   }
 }

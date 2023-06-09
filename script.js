@@ -136,3 +136,31 @@ document.getElementById('toggleBtn').addEventListener('click', () => {
   navbarItems.classList.toggle('show');
   navbarItems.classList.toggle('hide');
 });
+
+
+var svgFiles = ["./assests/svg animated files/Property 1=Variant5.svg",
+  "./assests/svg animated files/Property 1=Variant2.svg",
+  "./assests/svg animated files/Property 1=Variant3.svg",
+  "./assests/svg animated files/Property 1=Variant4.svg"];
+
+var svgContainer = document.getElementById("animation1");
+var currentIndex = 0;
+
+setInterval(function () {
+  svgContainer.style.backgroundImage = "url('" + svgFiles[currentIndex] + "')";
+  currentIndex = (currentIndex + 1) % svgFiles.length;
+}, 1000);
+
+var svgFiles2 = ["./assests/svg animated files/Property 1=amico (1).svg",
+  "./assests/svg animated files/Property 1=level 2.svg",
+  "./assests/svg animated files/Property 1=Level 3.svg",
+  "./assests/svg animated files/Property 1=Level 3.svg",
+  "./assests/svg animated files/Property 1=Level 3.svg"];
+
+var svgContainer2 = document.getElementById("animation2");
+var currentIndex2 = 0;
+
+setInterval(function () {
+  svgContainer2.style.backgroundImage = "url('" + svgFiles2[currentIndex] + "')";
+  currentIndex2 = (currentIndex2 + 1) % svgFiles2.length;
+}, 1000); 

@@ -59,6 +59,12 @@ ul li a {
   font-size: 1.406vw;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #7209b7;
+  text-decoration-thickness: 2px;
+}
+
 .signIn {
   position: relative;
   display: flex;
@@ -279,19 +285,28 @@ input::placeholder {
 #animation1 {
   background-color: transparent;
   position: absolute;
-  width: 30%;
+  width: 30vw;
   height: 40%;
-  bottom: -22%;
+  bottom: -40%;
   z-index: 1;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 #animation2 {
+  background-color: transparent;
   position: absolute;
-  width: 30%;
+  width: 30vw;
   height: 40%;
-  bottom: -22%;
+  bottom: -40%;
   right: 0;
   z-index: 1;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 footer {
