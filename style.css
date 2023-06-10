@@ -60,9 +60,8 @@ ul li a {
 }
 
 a:hover {
-  text-decoration: underline;
-  text-decoration-color: #7209b7;
-  text-decoration-thickness: 2px;
+  border-bottom: #5b0792 1px solid;
+  padding: 5px;
 }
 
 .signIn {
