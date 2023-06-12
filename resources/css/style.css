@@ -33,19 +33,14 @@ nav {
   height: 30px;
 }
 
-.logo h3 {
-  font-size: 3.5vw;
-
-  /* margin-right: -40px; */
-  width: 180px;
-  height: 41.28px;
+#logo img {
+  width: 100%;
+  cursor: pointer;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-
-  /* margin-right: -25px; */
 }
 
 ul li {
@@ -57,6 +52,11 @@ ul li a {
   color: #333;
   padding: 5px;
   font-size: 1.406vw;
+}
+
+a:hover {
+  border-bottom: #5b0792 1px solid;
+  padding: 5px;
 }
 
 .signIn {
@@ -217,23 +217,19 @@ input::placeholder {
 }
 
 #signUpBtn {
-  position: relative;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  text-align: center;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
   width: 35vw;
-  height: 3.5vw;
+  height: 4vw;
+  font-size: 20px;
   color: white;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7209b7;
-  border: 0.6px solid #9b9b9b;
   border-radius: 8px;
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 120%;
   cursor: pointer;
 }
 
@@ -279,20 +275,28 @@ input::placeholder {
 #animation1 {
   background-color: transparent;
   position: absolute;
-  width: 30%;
+  width: 30vw;
   height: 40%;
-  bottom: -22%;
+  bottom: -40%;
   z-index: 1;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.animation2 {
+#animation2 {
   background-color: transparent;
   position: absolute;
-  width: 30%;
+  width: 30vw;
   height: 40%;
-  bottom: -22%;
+  bottom: -40%;
   right: 0;
   z-index: 1;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 footer {

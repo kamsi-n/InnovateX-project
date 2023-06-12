@@ -131,8 +131,49 @@ confirmPasswordInput.addEventListener('input', () => {
   }
 });
 
-document.getElementById('toggleBtn').addEventListener('click', () => {
-  const navbarItems = document.getElementById('navbarItems');
-  navbarItems.classList.toggle('show');
-  navbarItems.classList.toggle('hide');
+const svgFiles = ['/resources/assets/svg animated files/Property 1=Variant5.svg',
+  '/resources/assets/svg animated files/Property 1=Variant2.svg',
+  '/resources/assets/svg animated files/Property 1=Variant3.svg',
+  '/resources/assets/svg animated files/Property 1=Variant4.svg'];
+
+const svgContainer = document.getElementById('animation1');
+let currentIndex = 0;
+
+setInterval(() => {
+  svgContainer.style.backgroundImage = `url('${svgFiles[currentIndex]}')`;
+  currentIndex = (currentIndex + 1) % svgFiles.length;
+}, 1000);
+
+const svgFiles2 = ['/resources/assets/svg animated files/Property 1=amico (1).svg',
+  '/resources/assets/svg animated files/Property 1=level 2.svg',
+  '/resources/assets/svg animated files/Property 1=Level 3.svg',
+  '/resources/assets/svg animated files/Property 1=Level 3.svg',
+  '/resources/assets/svg animated files/Property 1=Level 3.svg'];
+
+const svgContainer2 = document.getElementById('animation2');
+let currentIndex2 = 0;
+
+setInterval(() => {
+  svgContainer2.style.backgroundImage = `url('${svgFiles2[currentIndex]}')`;
+  currentIndex2 = (currentIndex2 + 1) % svgFiles2.length;
+}, 1000);
+
+const form = document.querySelector('form');
+function validateForm() {
+  const username = document.getElementById('signUpUsername').value;
+  const signUpEmail = document.getElementById('signUpEmail').value;
+
+  if (username === '' || signUpEmail === '' || passwordInput.value === '' || confirmPasswordInput.value === '') {
+    alert('Please fill in all fields.');
+    return false;
+  }
+  window.location.href = '/resources/html/home.html';
+  return false;
+}
+
+form.addEventListener('submit', validateForm);
+
+const logo = document.getElementById('logo');
+logo.addEventListener('click', () => {
+  window.location.href = '/resources/html/home.html';
 });
