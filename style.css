@@ -233,7 +233,7 @@ input::placeholder {
   height: 4vw;
   font-size: 20px;
   color: white;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7209B7;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7209b7;
   border-radius: 8px;
 }
 

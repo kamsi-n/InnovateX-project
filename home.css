@@ -26,19 +26,6 @@ nav {
   padding: 5px;
 }
 
-#toggleBtn {
-  visibility: hidden;
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  right: 35%;
-}
-
-#toggleBtn img {
-  width: 40px;
-  height: 30px;
-}
-
 .logo h3 {
   font-size: 3.5vw;
   width: 180px;
@@ -241,6 +228,19 @@ hr {
   width: 12.5%;
   height: 2%;
   filter: contrast(1.2) brightness(1.1);
+}
+
+#toggleBtn {
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 35%;
+}
+
+#toggleBtn img {
+  width: 40px;
+  height: 30px;
 }
 
 @media screen and (max-width: 768px) {
