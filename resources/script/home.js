@@ -42,6 +42,6 @@ navLinks.forEach((link) => {
 });
 
 const logo = document.getElementById('.logo');
-logo.addEventListener('click', function() {
+logo.addEventListener('click', () => {
   window.location.href = '/resources/html/home.html';
 });
