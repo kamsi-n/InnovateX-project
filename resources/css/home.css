@@ -26,10 +26,9 @@ nav {
   padding: 5px;
 }
 
-.logo h3 {
-  font-size: 3.5vw;
-  width: 180px;
-  height: 41.28px;
+#logo img {
+  width: 100%;
+  cursor: pointer;
 }
 
 ul {
@@ -221,6 +220,7 @@ hr {
   position: absolute;
   top: 110%;
   width: 100%;
+  cursor: pointer;
 }
 
 .brands img {
@@ -236,6 +236,7 @@ hr {
   border: none;
   position: absolute;
   right: 35%;
+  cursor: pointer;
 }
 
 #toggleBtn img {
@@ -315,7 +316,12 @@ hr {
   }
 
   .brands {
-    top: 180%;
-    margin: 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  .brands img {
+    width: 10%;
   }
 }

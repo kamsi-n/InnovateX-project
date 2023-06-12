@@ -33,19 +33,14 @@ nav {
   height: 30px;
 }
 
-.logo h3 {
-  font-size: 3.5vw;
-
-  /* margin-right: -40px; */
-  width: 180px;
-  height: 41.28px;
+#logo img {
+  width: 100%;
+  cursor: pointer;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-
-  /* margin-right: -25px; */
 }
 
 ul li {
@@ -235,6 +230,7 @@ input::placeholder {
   color: white;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7209b7;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 #poor {
