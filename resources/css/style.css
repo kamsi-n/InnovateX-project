@@ -89,8 +89,6 @@ a:hover {
   padding: 0.781vw 1.563vw;
   border-radius: 4px;
   cursor: pointer;
-
-  /* margin-right: -16px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,11 +109,12 @@ form {
 }
 
 .container {
+  align-self: center;
   background-color: transparent;
   position: relative;
   width: 40%;
   min-height: 120%;
-  left: 25%;
+  left: 27%;
   margin: 20px;
   padding: 30px;
   margin-bottom: 100px;
@@ -323,38 +322,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60%;
-    left: 0;
-    width: 10%;
-    background-color: rgba(114, 9, 183, 0.1);
-    padding: 10px;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    margin-left: 45%;
-  }
-
-  #toggleBtn {
-    visibility: visible;
-    position: relative;
-    margin-left: 45%;
-    text-align: center;
-  }
-
-  #navbarItems {
-    display: block;
-    cursor: pointer;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  #navbarItems.hide {
-    display: none;
+  .container {
+    width: 50%;
+    margin: 20px -8%;
   }
 }
