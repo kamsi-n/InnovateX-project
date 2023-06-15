@@ -43,5 +43,5 @@ navLinks.forEach((link) => {
 
 const logo = document.getElementById('.logo');
 logo.addEventListener('click', () => {
-  window.location.href = '../html/home.html';
+  window.location.href = 'resources/html/home.html';
 });
