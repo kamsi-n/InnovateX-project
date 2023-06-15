@@ -1,5 +1,5 @@
 const links = document.querySelectorAll('.db-sidebar a');
-links.forEach(link => {
+links.forEach((link) => {
   const icon = link.querySelector('img');
   const originalSrc = icon.src;
   const hoverSrc = icon.dataset.srcHover;

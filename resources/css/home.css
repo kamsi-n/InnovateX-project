@@ -225,6 +225,19 @@ hr {
   filter: contrast(1.2) brightness(1.1);
 }
 
+.pcontainer img {
+  width: 8rem;
+  border: 0;
+  margin-top: 1rem;
+}
+
+.footerimages img {
+  width: 20px;
+  margin: 7px;
+  border: 1px solid rgba(128, 128, 128, 0.164);
+  padding: 2px;
+}
+
 #logo img {
   width: 100%;
   cursor: pointer;
@@ -329,8 +342,7 @@ hr {
     position: absolute;
     top: 120%;
     width: 100%;
-
-  }  
+  }
 
   .bottom {
     position: absolute;
@@ -343,7 +355,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid #B3B5B8;
+  border-top: 1px solid #b3b5b8;
   margin-top: 100px;
   cursor: pointer;
 }
@@ -357,12 +369,6 @@ hr {
   font-weight: lighter;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
-  margin-top: 1rem;
-}
-
-.pcontainer img {
-  width: 8rem;
-  border: 0;
   margin-top: 1rem;
 }
 
@@ -404,13 +410,6 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-}
-
-.footerimages img {
-  width: 20px;
-  margin: 7px;
-  border: 1px solid rgba(128, 128, 128, 0.164);
-  padding: 2px;
 }
 
 .footerinput p {
