@@ -5,10 +5,10 @@ document.getElementById('toggleBtn').addEventListener('click', () => {
 });
 
 const svgFiles = [
-  '/resources/assets/svg animated files/Property 1=Variant5.svg',
-  '/resources/assets/svg animated files/Property 1=Variant2.svg',
-  '/resources/assets/svg animated files/Property 1=Variant3.svg',
-  '/resources/assets/svg animated files/Property 1=Variant4.svg',
+  '../assets/svg animated files/Property 1=Variant5.svg',
+  '../assets/svg animated files/Property 1=Variant2.svg',
+  '../assets/svg animated files/Property 1=Variant3.svg',
+  '../assets/svg animated files/Property 1=Variant4.svg',
 ];
 
 const svgContainer = document.getElementById('svg-container');
@@ -43,5 +43,5 @@ navLinks.forEach((link) => {
 
 const logo = document.getElementById('.logo');
 logo.addEventListener('click', () => {
-  window.location.href = 'resources/html/home.html';
+  window.location.href = '../html/home.html';
 });
