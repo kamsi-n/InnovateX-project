@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: rubik;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 146px;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.01);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+img {
+    width: 48px;
+    height: 48px;
+}
+
+#logo {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 20px;
+    top: 0;
+    cursor: pointer;
+    padding: 0px;
+}
+
+#rightSide {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#enterCode {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 20px 50px;
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #280340;
+}
+
+#createQuiz {
+    background-color: #5B0792;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 20px 50px;
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+}
+
+#notifsIcon {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+#profilePic {
+    width: 48px;
+    height: 48px;
+}
+
+.db-sidebar {
+  position: absolute;
+    width: 25vw;
+    height: 100vh;
+    left: 0px;
+    top: 90px;
+    background: #5B0792;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.db-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.db-sidebar li {
+    margin-top: 10px;
+}
+
+.db-sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 2vw;
+    color: white;
+}
+
+.db-sidebar a:hover {
+    background-color: white;
+    color: #280340;
+}
+
+.db-sidebar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* .content {
+  margin-left: 250px; /* Match the width of the sidebar 
+  padding: 20px;
+}
+*/
