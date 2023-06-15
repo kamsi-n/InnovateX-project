@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.footer {
+  border: 20px;
+  top: 27rem;
+  align-items: flex-start;
+}
+
+.pcontainer {
+  border-top: 1px solid grey;
+  padding-left: 4rem;
+}
+
+.pcontainer h6 {
+  font-weight: lighter;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
+  top: 6rem;
+}
+
+.pcontainer img {
+  width: 8rem;
+  border: 0;
+  top: 1rem;
+}
+
+.footerinput {
+  padding-left: 66rem;
+  bottom: 7rem;
+}
+
+.footerinput h5 {
+  top: 6rem;
+}
+
+.footerinput input {
+  top: 7rem;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 4px;
+  border-color: rgba(128, 128, 128, 0.274);
+}
+
+::placeholder {
+  font-size: 10px;
+  color: rgba(128, 128, 128, 0.568);
+}
+
+#footerb {
+  top: 9rem;
+  right: 11.3rem;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgb(99, 33, 160);
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 11px;
+  border: 0;
+}
+
+.footerimages img {
+  width: 20px;
+  top: 11rem;
+  margin: 7px;
+  border: 1px solid rgba(128, 128, 128, 0.164);
+  padding: 2px;
+}
+
+.footerinput p {
+  top: 10rem;
+  font-size: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footerhead {
+  display: flex;
+  justify-content: center;
+  bottom: 7rem;
+}
+
+.footerhead h6 {
+  margin: 9px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.footerend {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-weight: lighter;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  top: 40px;
+}
+
+.footerterms {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: grey;
+  font-size: 11px;
+  top: 40px;
+}
