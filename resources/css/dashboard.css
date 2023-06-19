@@ -101,6 +101,20 @@ nav {
   cursor: pointer;
 }
 
+#navButton {
+  background-image: url("../assets/menu\ \(2\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin-top: -13px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
 .db-sidebar {
   position: absolute;
   width: 20vw;
@@ -109,6 +123,7 @@ nav {
   top: 90px;
   background: #5b0792;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 .db-sidebar ul {
@@ -329,8 +344,8 @@ h2 {
 #animation {
   background-color: transparent;
   position: absolute;
-  width: 30vw;
-  height: 20%;
+  width: 35vw;
+  height: 20vh;
   bottom: -10%;
   right: 0;
   z-index: 1;
@@ -338,4 +353,44 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  #navButton {
+    visibility: visible;
+    margin-left: -20px;
+  }
+
+  #logo {
+    top: 25px;
+    width: 30%;
+    height: 35%;
+  }
+
+  .db-sidebar {
+    visibility: hidden;
+  }
+
+  .mainBody {
+    margin-left: -25%;
+  }
+
+  #enterCode,
+  #createQuiz {
+    visibility: hidden;
+  }
+
+  #rightSide img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #rightSide #notifsIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .activities p {
+    font-size: 10px;
+  }
 }

@@ -40,3 +40,9 @@ setInterval(() => {
   svgContainer.style.backgroundImage = `url('${svgFiles[currentIndex]}')`;
   currentIndex = (currentIndex + 1) % svgFiles.length;
 }, 1000);
+
+const button = document.getElementById('navButton');
+button.addEventListener('click', () => {
+    const nav = document.getElementById('.db-sidebar');
+    nav.style.visibility = 'visible';
+});
