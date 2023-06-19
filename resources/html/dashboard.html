@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/resources/assets/Logo.svg">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +29,9 @@
 
     <div class="db-sidebar">
         <ul>
-            <li><a href="#"><img src="../assets/home-icons/dashboard (2).png" class="icon"
-                        data-src-hover="../assets/home-icons/Vector (3).svg" alt="dashboard">Dashboard</a></li>
+            <li><a class="dashboard" href="../html/dashboard.html"><img src="../assets/home-icons/dashboard (2).png"
+                        class="icon" data-src-hover="../assets/home-icons/Vector (3).svg" alt="dashboard">Dashboard</a>
+            </li>
             <li><a href="#"><img src="../assets/home-icons/vector2.svg" alt="Quizzes">Quizzes</a></li>
             <li><a href="#"><img src="../assets/home-icons/vector2.svg" alt="My Library">My Library</a></li>
             <li><a href="#"><img src="../assets/home-icons/vector3.svg" alt="Reports">Reports</a></li>
@@ -37,7 +39,7 @@
     </div>
 
     <div class="content">
-        <h1>Hey John</h1>
+        <h1>Hey John <img src="../assets/🦆 emoji _waving hand sign_.svg" alt="emoji waving hand"></h1>
         <p>Let's get started by making some entertaining and interactive quizzes.
             Quick and simple. To begin, click the + icon below.</p>
     </div>
@@ -77,6 +79,8 @@
             <p class="time">Time - 11:30 am, 26/03/2023</p>
         </div>
     </div>
+
+    <div id="animation"></div>
 
     <script src="../script/dashboard.js"></script>
 </body>
