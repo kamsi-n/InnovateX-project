@@ -339,37 +339,28 @@ hr {
   .brands img {
     width: 10%;
   }
-
-  .footer {
-    position: absolute;
-    top: 120%;
-    width: 100%;
-  }
-
-  .bottom {
-    position: absolute;
-    top: 170%;
-    margin-left: 30%;
-  }
 }
 
 .footer {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 6px 14px;
+  gap: 9px;
+  width: 100vw;
   border-top: 1px solid #b3b5b8;
-  margin-top: 100px;
-  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 100%;
 }
 
 .pcontainer {
   margin-top: 4px;
-  padding-left: 4rem;
 }
 
 .pcontainer h6 {
   font-weight: lighter;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
   margin-top: 1rem;
 }
