@@ -426,7 +426,8 @@ h2 {
     height: 30px;
   }
 
-  #enterCode , #createQuiz {
+  #enterCode,
+  #createQuiz {
     padding: 10px 25px;
     font-size: 10px;
   }
