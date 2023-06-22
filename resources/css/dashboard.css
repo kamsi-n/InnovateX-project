@@ -379,8 +379,8 @@ h2 {
   filter: opacity(80%);
   left: 0;
   top: 50%;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   z-index: 1;
   cursor: pointer;
 }
@@ -424,6 +424,11 @@ h2 {
   #rightSide #notifsIcon {
     width: 30px;
     height: 30px;
+  }
+
+  #enterCode , #createQuiz {
+    padding: 10px 25px;
+    font-size: 10px;
   }
 
   #toggleArrow {
