@@ -43,6 +43,17 @@ setInterval(() => {
 
 const button = document.getElementById('navButton');
 button.addEventListener('click', () => {
-    const nav = document.getElementById('.db-sidebar');
-    nav.style.visibility = 'visible';
+  const nav = document.getElementById('rightSide');
+  nav.style.visibility = nav.style.visibility === 'visible' ? 'hidden' : 'visible';
+});
+
+const toggle = document.getElementById('toggleArrow');
+toggle.addEventListener('click', () => {
+  const sidebar = document.querySelector('.db-sidebar');
+  sidebar.style.visibility = sidebar.style.visibility === 'visible' ? 'hidden' : 'visible';
+  if (sidebar.style.visibility === 'hidden') {
+    toggle.style.left = '0';
+  } else {
+    toggle.style.left = '21%';
+  }
 });
