@@ -30,17 +30,6 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % texts.length;
 }, 1500);
 
-const currentPageUrl = window.location.href;
-const navLinks = document.querySelectorAll('#navbarItems ul li a');
-
-navLinks.forEach((link) => {
-  if (link.href === currentPageUrl) {
-    link.classList.add('active');
-  } else {
-    link.classList.remove('active');
-  }
-});
-
 const logo = document.getElementById('.logo');
 logo.addEventListener('click', () => {
   window.location.href = 'resources/html/home.html';

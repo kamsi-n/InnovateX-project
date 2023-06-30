@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Rubik', sans-serif;
+  min-height: 100%;
 }
 
 header {
@@ -52,10 +53,6 @@ a:hover {
   display: flex;
   flex-direction: row;
   margin-left: -170px;
-}
-
-.signIn button:hover {
-  border: #7209b7 1px solid;
 }
 
 .signIn p {
@@ -143,7 +140,7 @@ hr {
 }
 
 .s1-desc p {
-  color: #280340;
+  color: black;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5vw;
@@ -201,10 +198,10 @@ hr {
 }
 
 .elipses1 {
-  position: fixed;
+  position: absolute;
   width: 320px;
   right: 0;
-  top: -20%;
+  top: -30%;
   z-index: -1;
 }
 
@@ -225,6 +222,132 @@ hr {
   width: 12.5%;
   height: 2%;
   filter: contrast(1.2) brightness(1.1);
+}
+
+#sec2 {
+  position: relative;
+  margin-top: 122px;
+  padding: 0 80px;
+  align-items: center;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+}
+
+.container1 img {
+  max-width: 35vw;
+  margin-right: 10px;
+}
+
+.text-container1 {
+  flex: 1;
+}
+
+.text-container1 h4 {
+  color: #5b0792;
+  margin-bottom: 10px;
+}
+
+.text-container1 h2 {
+  margin: 10px 0;
+  color: #280340;
+}
+
+.text-container1 p {
+  color: #353535;
+}
+
+.text-container1 hr {
+  background-color: #5a079223;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 35vw;
+}
+
+.elipses2 {
+  position: absolute;
+  width: 320px;
+  left: -60px;
+  rotate: 180deg;
+  z-index: -1;
+}
+
+.sec2-header {
+  position: relative;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 35px;
+}
+
+.sec2-header h4 {
+  color: #5b0792;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.sec2-header h2 {
+  color: #280340;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+#sec3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec3Card {
+  display: flex;
+  width: 80vw;
+  padding: 30px 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background-color: #5b0792;
+  position: relative;
+  margin-top: 100px;
+  color: white;
+  line-height: 200%;
+}
+
+.sec3Card p {
+  text-align: center;
+  font-size: 10px;
+  padding: 0 145px;
+}
+
+.sec3Card button {
+  background-color: white;
+  color: #5b0792;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.signIn button:hover {
+  border: #7209b7 1px solid;
 }
 
 .pcontainer img {
@@ -250,7 +373,6 @@ hr {
   background-color: transparent;
   border: none;
   position: absolute;
-  right: 35%;
   cursor: pointer;
 }
 
@@ -275,15 +397,20 @@ hr {
     margin-left: 45%;
   }
 
+
+
   #toggleBtn {
     visibility: visible;
     position: relative;
-    right: 20%;
+    right: 100px;
+    margin: 0 auto;
   }
 
   #navbarItems {
     display: block;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
   }
 
   a:hover {
@@ -337,22 +464,66 @@ hr {
   }
 
   .brands img {
-    width: 10%;
+    width: 8vw;
+  }
+
+  #logo img {
+    width: 100px;
+  }
+
+  #sec2 {
+    margin-top: 340px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .sec2-header {
+    text-align: center;
+  }
+
+  .container1,
+  .container {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .sec3Card {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sec3Card p {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    top: 500px;
+  }
+
+  .pcontainer {
+    position: relative;
+    text-align: center;
+  }
+
+  .bottom {
+    top: 220px;
+    justify-self: center;
+    align-self: center;
   }
 }
 
 .footer {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 6px 14px;
-  gap: 9px;
-  width: 100vw;
-  border-top: 1px solid #b3b5b8;
-  flex-shrink: 0;
+  position: relative;
   margin-top: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 15%;
+  border-top: 1px solid #b3b5b8;
+  z-index: 1;
 }
 
 .pcontainer {
@@ -435,4 +606,38 @@ hr {
   font-size: 11px;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.bottom {
+  position: absolute;
+  margin-top: 36vh;
+}
+
+@media screen and (max-width: 344px) {
+  #sec2 {
+    margin-top: 465px;
+  }
+
+  #toggleBtn img {
+    width: 30px;
+    height: 20px;
+  }
+
+  #toggleBtn {
+    right: 100px;
+  }
+
+  #logo img {
+    width: 100px;
+  }
+
+  .footer {
+    top: 800px;
+  }
+
+  .bottom {
+    position: relative;
+    margin-left: 10px;
+    margin-top: -20px;
+  }
 }
