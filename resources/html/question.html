@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="../css/question.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo">
+            <button id="navButton" onclick="toggle()"></button>
+            <div id="rightSide">
+                <button id="enterCode">Enter Code</button>
+                <button id="createQuiz">Create Quiz</button>
+                <img src="../assets/bell (1).png" id="notifsIcon" alt="notifications icon">
+                <img src="../assets/User icon.png" id="profilePic" alt="profile picture">
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="card">
+            <div class="innerCard">
+                <div class="top-row">
+                    <div class="btn1">
+                        <img src="../assets/material-symbols_dashboard-outline.png" alt="">
+                        <p>Question List</p>
+                    </div>
+                    <div class="db-btn">
+                        <img src="../assets/material-symbols_dashboard-outline.png" alt="">
+                    </div>
+                    <p class="timer">00:00</p>
+                </div>
+
+                <div class="questionCard">
+                    <div class="text"></div>
+                    <div class="image"></div>
+                </div>
+
+                <div class="bottom-row">
+                    <div class="point">
+                        <p>Your Point: 30 0f 100</p>
+                    </div>
+                    <div class="q-number">
+                        <p>Question 4 of 10</p>
+                    </div>
+                    <div class="submit">
+                        <img src="../assets/home-icons/dashboard (2).png" alt="">
+                        <p>Submit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="closeBtn"></div>
+        <div class="publish">Publish</div>
+    </div>
+
+    <script src="../script/question.js"></script>
+</body>
+
+</html>
