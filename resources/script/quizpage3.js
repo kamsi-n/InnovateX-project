@@ -27,8 +27,6 @@ logo.addEventListener('click', () => {
   window.location.href = '../html/home.html';
 });
 
-
-
 const button = document.getElementById('navButton');
 button.addEventListener('click', () => {
   const nav = document.getElementById('rightSide');
@@ -45,4 +43,3 @@ toggle.addEventListener('click', () => {
     toggle.style.left = '21%';
   }
 });
-
