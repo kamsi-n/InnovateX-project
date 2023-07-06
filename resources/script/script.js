@@ -177,3 +177,8 @@ const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {
   window.location.href = './resources/html/home.html';
 });
+
+const signInButton = document.querySelector('.signInBtn');
+signInButton.addEventListener('click', () => {
+  window.location.href = './resources/html/signin.html';
+});
