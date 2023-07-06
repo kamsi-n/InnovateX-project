@@ -33,7 +33,7 @@
                     <div class="db-btn">
                         <img src="../assets/material-symbols_dashboard-outline.png" alt="">
                     </div>
-                    <p id="timer"></p>
+                    <p id="timer">00:00</p>
                 </div>
 
                 <div class="questionCard">
@@ -75,7 +75,50 @@
             </div>
         </div>
         <div class="closeBtn"></div>
-        <div class="publish">Publish</div>
+        <div id="publish">Publish</div>
+    </div>
+
+    <div class="popupContent">
+      <div id="loading"></div>
+
+      <div id="getCodeLink">
+            <img id="close" src="../assets/Frame 1000003679.svg" alt="toprow">
+            <div class="purpleCard">
+                <img class="success" src="../assets/Successmark.svg" alt="">
+                <h3>Publishing  is complete</h3>
+                <p>The “Hist..” quiz has been successfully published into a shareable link</p>
+                <img class="rafiki" src="../assets/rafiki.png" alt="">
+                <button id="send">Send</button>
+            </div>
+            <img id="bottomrow" src="../assets/Frame 1000003680.svg" alt="bottomrow">
+      </div>
+    </div>
+
+    <div id="sendOverlay">
+        <img id="close2" src="../assets/Frame 1000003679.svg" alt="">
+        <div class="whiteCard">
+            <h2>Send quiz via email</h2>
+            <form action="https://formspree.io/f/mleyedek" method="post">
+                <label>
+                    To
+                    <input type="email" name="email" placeholder="Email, comma separated">
+                </label>
+                <label>
+                    Subject
+                    <textarea name="Subject"></textarea>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" placeholder="I've invited you to take a quiz"></textarea>
+                </label>
+                <button id="sendBtn" type="submit">Send</button>
+            </form>
+        </div>
+        <img id="copyLink" src="../assets/Frame 1000003678.svg" alt="">
+        <div id="sendAlert">
+            <img src="../assets/Icon.svg" alt="">
+            <p>Successful. Sent to:</p>
+        </div>
     </div>
 
     <script src="../script/question.js"></script>

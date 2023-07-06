@@ -145,7 +145,6 @@ nav {
   justify-content: center;
   position: relative;
   top: 91.4px;
-  z-index: -1;
 }
 
 .card {
@@ -184,7 +183,7 @@ nav {
   cursor: pointer;
 }
 
-.publish {
+#publish {
   display: flex;
   max-width: 100px;
   height: 30px;
@@ -280,23 +279,21 @@ nav {
 
 .text h1 {
   color: #000;
-  font-size: 13px;
+  font-size: 1.7vw;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  padding: 5px;
+  padding: 15px;
 }
 
-.one {
-  margin-top: 10%;
-}
-
-.text label {
-  font-size: 10px;
+.one label {
+  font-size: 1.2vw;
 }
 
 .image {
-  background-color: #d9d9d9;
+  background-image: url("../assets/completed-steps.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 20vw;
   border-radius: 0 14px 14px 0;
 }
@@ -339,7 +336,156 @@ nav {
 }
 
 .submit img {
-  width: 10px;
+  width: 20%;
+}
+
+#loading {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 115vh;
+  background-image: url("../assets/QuizWhiz\ Dashboard-1920-publish\ loader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 2;
+}
+
+#getCodeLink {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 115vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.purpleCard {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  background-color: #5b0792;
+  justify-content: center;
+  align-items: center;
+}
+
+#close,
+#bottomrow {
+  width: 230px;
+  cursor: pointer;
+}
+
+.success {
+  width: 59px;
+  padding: 10px;
+}
+
+.rafiki {
+  width: 65px;
+}
+
+#getCodeLink h3 {
+  font-size: 10px;
+  margin: 10px;
+}
+
+#getCodeLink p {
+  text-align: center;
+  font-size: 10px;
+  margin: 13px;
+}
+
+#send {
+  margin: 7px;
+  width: 130px;
+  border-radius: 4px;
+  background-color: #000;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+#sendOverlay {
+  background-color: rgba(0, 0, 0, 0.603);
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 115vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 2;
+}
+
+#sendOverlay img {
+  width: 230px;
+  background-color: #585658;
+  padding: 0 10px;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+}
+
+#sendOverlay #copyLink {
+  border-radius: 0 0 4px 4px;
+}
+
+.whiteCard {
+  background-color: white;
+  color: #000;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.whiteCard label {
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 30%;
+}
+
+.whiteCard button {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-left: 125px;
+  cursor: pointer;
+}
+
+#sendAlert {
+  background-color: #10b981;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+  padding: 15px;
+  font-size: 10px;
+  visibility: hidden;
+}
+
+#sendAlert img {
+  width: 35px;
+  background-color: #10b981;
 }
 
 @media screen and (max-width: 600px) {
@@ -417,7 +563,7 @@ nav {
   }
 
   .text h1 {
-    font-size: 10px;
+    font-size: 3vw;
   }
 
   .text label {
@@ -439,8 +585,20 @@ nav {
     margin-top: 15px;
   }
 
-  .publish {
+  #publish {
     bottom: -150px;
     right: 0;
+  }
+
+  #getCodeLink,
+  #loading,
+  #sendOverlay {
+    height: 140vh;
+  }
+
+  #close,
+  #bottomrow,
+  .purpleCard {
+    width: 170px;
   }
 }
