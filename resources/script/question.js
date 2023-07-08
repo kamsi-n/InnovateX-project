@@ -6,7 +6,7 @@ button.addEventListener('click', () => {
 
 let timeLeft = 15;
 
-function updateTimer() {
+const timerInterval = setInterval(() => {
   const timerElement = document.getElementById('timer');
 
   timerElement.innerHTML = `${timeLeft}:00`;
@@ -17,9 +17,7 @@ function updateTimer() {
   } else {
     timeLeft -= 1;
   }
-}
-
-const timerInterval = setInterval(updateTimer, 1000);
+}, 1000);
 
 const publish = document.getElementById('publish');
 const popup1 = document.getElementById('loading');
