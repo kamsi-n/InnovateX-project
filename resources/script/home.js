@@ -34,3 +34,24 @@ const logo = document.getElementById('.logo');
 logo.addEventListener('click', () => {
   window.location.href = 'resources/html/home.html';
 });
+
+// Get all the question elements
+const questions = document.querySelectorAll('.faq-section h5');
+// Attach click event listeners to each question
+questions.forEach((question) => {
+  question.addEventListener('click', () => {
+    // Toggle the active class on the clicked question
+    question.classList.toggle('active');
+    // Get the next sibling element (answer)
+    const answer = question.nextElementSibling;
+    // Toggle the answer's visibility
+    answer.classList.toggle('show');
+  });
+});
+
+const clickedQuestions = document.querySelectorAll('.faq-section h5.question');
+clickedQuestions.forEach((clickedQuestion) => {
+  clickedQuestion.addEventListener('click', () => {
+    clickedQuestion.classList.toggle('clicked');
+  });
+});
