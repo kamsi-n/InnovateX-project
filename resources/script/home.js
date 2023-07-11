@@ -45,13 +45,16 @@ questions.forEach((question) => {
     // Get the next sibling element (answer)
     const answer = question.nextElementSibling;
     // Toggle the answer's visibility
-    answer.classList.toggle('show');
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
   });
 });
-
-const clickedQuestions = document.querySelectorAll('.faq-section h5.question');
-clickedQuestions.forEach((clickedQuestion) => {
-  clickedQuestion.addEventListener('click', () => {
-    clickedQuestion.classList.toggle('clicked');
+const question = document.querySelectorAll('.faq-section h5.question');
+question.forEach((question) => {
+  question.addEventListener('click', () => {
+    question.classList.toggle('clicked');
   });
 });
