@@ -258,6 +258,8 @@ hr {
 
 .text-container1 p {
   color: #353535;
+  border-bottom: #d3b3e9 1px solid;
+  padding-bottom: 10px;
 }
 
 .text-container1 hr {
@@ -337,18 +339,23 @@ hr {
   padding: 0 145px;
 }
 
-.sec3Card button {
+.sec3Card .button {
   background-color: white;
   color: #5b0792;
   font-size: 15px;
   border: none;
   border-radius: 4px;
   padding: 7px;
+  text-decoration: none;
   cursor: pointer;
 }
 
+.sec3Card .button:hover {
+  color: white;
+  background-color: #692597e3;
+}
+
 #sec4 {
-  margin-top: 120px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -407,7 +414,7 @@ hr {
   height: 1px;
   background-color: #b3b5b8;
   margin-top: 5px;
-  margin-left: 39rem;
+  left: 0;
 }
 
 .faq-section h5 {
@@ -630,7 +637,6 @@ hr {
 
 .footer {
   position: relative;
-  margin-top: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -700,9 +706,17 @@ hr {
   margin-top: 34px;
 }
 
-.footerhead h6 {
+.footerhead a {
+  text-decoration: none;
+  color: black;
   margin: 9px;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.footerhead h6 :hover {
+  border: none;
+  padding: 0;
 }
 
 .footerend {
