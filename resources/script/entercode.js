@@ -1,13 +1,14 @@
 const start = document.getElementById('button');
 const load = document.getElementById('loading');
+const countdown = document.getElementById('countdown');
 start.addEventListener('click', () => {
   load.style.visibility = 'visible';
-});
-
-window.addEventListener('load', () => {
   setTimeout(() => {
-    load.style.display = 'none';
-  }, 6000);
+    countdown.style.visibility = 'visible';
+  }, 2000);
+  setTimeout(() => {
+    window.location.href = '../html/userQuestion.html';
+  }, 5000);
 });
 
 const display = document.querySelector('h2');
@@ -17,9 +18,3 @@ setInterval(() => {
   display.innerHTML = displayText[currentIndex];
   currentIndex = (currentIndex + 1) % displayText.length;
 }, 1000);
-
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    window.location.href = '../html/question.html';
-  }, 4000);
-});
