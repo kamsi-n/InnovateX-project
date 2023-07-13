@@ -80,6 +80,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .HP-SignUpBtn {
@@ -606,7 +607,6 @@ hr {
 
   .footer {
     flex-direction: column;
-    top: 500px;
   }
 
   .pcontainer {
@@ -756,10 +756,6 @@ hr {
 
   #logo img {
     width: 100px;
-  }
-
-  .footer {
-    top: 800px;
   }
 
   .bottom {
