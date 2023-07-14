@@ -63,8 +63,26 @@ nav {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  color: #280340;
   cursor: pointer;
+}
+
+.db-sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.db-sidebar a:hover {
+  background-color: white;
+  color: #280340;
+}
+
+#enterCode a {
+  color: #280340;
+  text-decoration: none;
 }
 
 #createQuiz {
@@ -87,7 +105,7 @@ nav {
 }
 
 #enterCode:hover {
-  text-decoration: underline solid #280340 3px;
+  box-shadow: #5b0792 0 0 1px 1px;
 }
 
 #createQuiz:hover {
@@ -154,20 +172,6 @@ nav {
   margin-top: 10px;
 }
 
-.db-sidebar a {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 1.5vw;
-  color: white;
-}
-
-.db-sidebar a:hover {
-  background-color: white;
-  color: #280340;
-}
-
 .active {
   background-color: rgba(255, 255, 255, 0.432);
   color: #280340;
@@ -178,6 +182,11 @@ nav {
   height: 18px;
   margin-right: 10px;
   transition: filter 0.3s ease-in-out;
+}
+
+#logoutBtn {
+  margin-top: 300px;
+  cursor: pointer;
 }
 
 .content {
@@ -215,6 +224,10 @@ nav {
 .one img {
   width: 40px;
   height: 40px;
+}
+
+.one:hover {
+  background-color: #ddacfc;
 }
 
 .one p {
@@ -289,6 +302,14 @@ nav {
   text-align: center;
 }
 
+.two:hover,
+.three:hover,
+.four:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-weight: 600;
+}
+
 h2 {
   position: relative;
   top: 90px;
@@ -343,6 +364,12 @@ h2 {
   padding: 20px 15px;
   display: flex;
   align-items: center;
+}
+
+.act-1:hover,
+.act-2:hover,
+.act-3:hover {
+  background-color: #f1e6f8;
 }
 
 .detail {
