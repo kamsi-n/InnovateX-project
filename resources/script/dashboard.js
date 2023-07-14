@@ -57,3 +57,13 @@ toggle.addEventListener('click', () => {
     toggle.style.left = '21%';
   }
 });
+
+const start = document.querySelector('.one');
+start.addEventListener('click', () => {
+  window.location.href = '../html/dashboard.html';
+});
+
+const logout = document.getElementById('logoutBtn');
+logout.addEventListener('click', () => {
+  window.location.href = '../html/signin.html';
+});

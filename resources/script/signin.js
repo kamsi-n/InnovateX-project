@@ -1,6 +1,6 @@
 const signupButton = document.querySelector('.signUpBtn');
 signupButton.addEventListener('click', () => {
-  window.location.href = 'index.html';
+  window.location.href = '/index.html';
 });
 
 const logo = document.getElementById('logo');

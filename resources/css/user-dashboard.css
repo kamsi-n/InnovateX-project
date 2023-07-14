@@ -63,8 +63,30 @@ nav {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  color: #280340;
   cursor: pointer;
+}
+
+.db-sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.db-sidebar a:hover {
+  background-color: white;
+  color: #280340;
+}
+
+#enterCode a {
+  color: #280340;
+  text-decoration: none;
+}
+
+#enterCode:hover {
+  box-shadow: #5b0792 0 0 1px 1px;
 }
 
 #createQuiz {
@@ -84,10 +106,6 @@ nav {
   font-size: 15px;
   color: white;
   cursor: pointer;
-}
-
-#enterCode:hover {
-  text-decoration: underline solid #280340 3px;
 }
 
 #createQuiz:hover {
@@ -152,20 +170,6 @@ nav {
 
 .db-sidebar li {
   margin-top: 10px;
-}
-
-.db-sidebar a {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 1.5vw;
-  color: white;
-}
-
-.db-sidebar a:hover {
-  background-color: white;
-  color: #280340;
 }
 
 .active {
