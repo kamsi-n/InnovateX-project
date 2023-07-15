@@ -66,10 +66,16 @@ nav {
   width: 60px;
   height: 40px;
   font-style: normal;
-  font-weight: 500;
+  
   font-size: 15px;
-  color: #280340;
+  
   cursor: pointer;
+}
+
+#enterCode a {
+  font-weight: 500;
+  color: #280340;
+  text-decoration: none;
 }
 
 #createQuiz {
@@ -92,7 +98,7 @@ nav {
 }
 
 #enterCode:hover {
-  text-decoration: underline solid #280340 3px;
+  box-shadow: #5b0792 0 0 1px 1px;
 }
 
 #createQuiz:hover {
