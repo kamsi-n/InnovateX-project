@@ -167,7 +167,7 @@ function validateForm() {
     alert('Please fill in all fields.');
     return false;
   }
-  window.location.href = 'resources/html/home.html';
+  window.location.href = './resources/html/home.html';
   return false;
 }
 
@@ -175,5 +175,10 @@ form.addEventListener('submit', validateForm);
 
 const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {
-  window.location.href = 'resources/html/home.html';
+  window.location.href = './resources/html/home.html';
+});
+
+const signInButton = document.querySelector('.signInBtn');
+signInButton.addEventListener('click', () => {
+  window.location.href = './resources/html/signin.html';
 });

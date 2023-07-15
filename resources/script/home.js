@@ -5,10 +5,10 @@ document.getElementById('toggleBtn').addEventListener('click', () => {
 });
 
 const svgFiles = [
-  '/resources/assets/svg animated files/Property 1=Variant5.svg',
-  '/resources/assets/svg animated files/Property 1=Variant2.svg',
-  '/resources/assets/svg animated files/Property 1=Variant3.svg',
-  '/resources/assets/svg animated files/Property 1=Variant4.svg',
+  '../assets/svg animated files/Property 1=Variant5.svg',
+  '../assets/svg animated files/Property 1=Variant2.svg',
+  '../assets/svg animated files/Property 1=Variant3.svg',
+  '../assets/svg animated files/Property 1=Variant4.svg',
 ];
 
 const svgContainer = document.getElementById('svg-container');
@@ -30,18 +30,31 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % texts.length;
 }, 1500);
 
-const currentPageUrl = window.location.href;
-const navLinks = document.querySelectorAll('#navbarItems ul li a');
-
-navLinks.forEach((link) => {
-  if (link.href === currentPageUrl) {
-    link.classList.add('active');
-  } else {
-    link.classList.remove('active');
-  }
-});
-
 const logo = document.getElementById('.logo');
 logo.addEventListener('click', () => {
   window.location.href = 'resources/html/home.html';
+});
+
+// Get all the question elements
+const questions = document.querySelectorAll('.faq-section h5');
+// Attach click event listeners to each question
+questions.forEach((question) => {
+  question.addEventListener('click', () => {
+    // Toggle the active class on the clicked question
+    question.classList.toggle('active');
+    // Get the next sibling element (answer)
+    const answer = question.nextElementSibling;
+    // Toggle the answer's visibility
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+  });
+});
+const question = document.querySelectorAll('.faq-section h5.question');
+question.forEach((question) => {
+  question.addEventListener('click', () => {
+    question.classList.toggle('clicked');
+  });
 });

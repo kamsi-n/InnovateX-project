@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizWhiz</title>
-    <link rel="stylesheet" href="https://github.com/kamsi-n/InnovateX-project/blob/feature-branch/resources/css/home.css">
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -16,18 +17,18 @@
     <header>
         <nav>
             <div id="logo">
-                <img src="/resources/assets/LogoII.svg" alt="QuizWhiz logo">
+                <img src="../assets/LogoII.svg" alt="QuizWhiz logo">
             </div>
-            <button id="toggleBtn"><img src="/resources/assets/menu (2).png" alt="toggle button"></button>
+            <button id="toggleBtn"><img src="../assets/menu (2).png" alt="toggle button"></button>
             <div id="navbarItems" class="hide">
                 <ul>
                     <li><a href="#sec1">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
+                    <li><a href="#sec3">About</a></li>
+                    <li><a href="#sec2">Features</a></li>
                 </ul>
             </div>
             <div class="signIn">
-                <button class="HP-SignInBtn">Sign In</button>
+                <a href="../html/signin.html" class="HP-SignInBtn">Sign In</a>
                 <a href="/index.html" class="HP-SignUpBtn">Sign Up</a>
             </div>
         </nav>
@@ -36,7 +37,7 @@
     <hr>
 
     <section id="sec1">
-        <img class="elipses1" src="/resources/assets/Ellipse 2315.svg" alt="ellipse">
+        <img class="elipses1" src="../assets/Ellipse 2315.svg" alt="ellipse">
         <div class="s1-icon">
             <div id="svg-container"></div>
         </div>
@@ -50,19 +51,167 @@
                 With new quiz content added regularly, there's something for everyone to enjoy! Test your skills and
                 become a QuizWhiz today!</p>
             <div class="quizBtns">
-                <button class="CQ">Create Quiz</button>
-                <button class="SQ">Start Quiz</button>
+                <a href="../html/dashboard.html" class="CQ">Create Quiz</a>
+                <a href="../html/entercode.html" class="SQ">Start Quiz</a>
             </div>
         </div>
 
         <div class="brands">
-            <img src="/resources/assets/Brand1.png" alt="oracle">
-            <img src="/resources/assets/Brand2.png" alt="morphaeus">
-            <img src="/resources/assets/Brand3.png" alt="samsung">
-            <img src="/resources/assets/Brand4.png" alt="monday.com">
+            <img src="../assets/Brand1.png" alt="oracle">
+            <img src="../assets/Brand2.png" alt="morphaeus">
+            <img src="../assets/Brand3.png" alt="samsung">
+            <img src="../assets/Brand4.png" alt="monday.com">
         </div>
     </section>
-    <script src="/resources/script/home.js"></script>
+
+    <section id="sec2">
+        <img class="elipses2" src="../assets/Ellipse 2315.svg" alt="elipses2">
+        <div class="sec2-header">
+            <h4>FEATURES</h4>
+            <h2>Our Special Features</h2>
+        </div>
+
+        <div class="container1">
+            <img src="../assets/image1.svg" alt="">
+            <div class="text-container1">
+                <h4>CHOOSE US</h4>
+                <h2>Quiz Maker</h2>
+                <p>Allows users to create and customize quizzes for their own use
+                    or for others to take
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text-container1">
+                <h4>CHOOSE US</h4>
+                <h2>Quiz Taker</h2>
+                <p>Allows users to take quizzes that have been created by other users or by themselves.
+                </p>
+            </div>
+            <div class="image">
+                <img src="../assets/image2.svg" alt="">
+            </div>
+        </div>
+
+        <div class="container1">
+            <img src="../assets/image3.svg" alt="">
+            <div class="text-container1">
+                <h4>CHOOSE US</h4>
+                <h2>Leaderboard</h2>
+                <p>Allows users to view and compare their scores with other users'
+                    scores, giving a competitive edge to the app
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec3">
+        <div class="sec3Card">
+            <h2>QuizWhiz App Launched!</h2>
+            <p>QuizWhiz is the ultimate quizzing experience in Africa. Take our fun, create interactive quizzes and
+                challenge yourself and your friends. Test your knowledge and become a QuizWhiz champion!</p>
+            <a href="../html/dashboard.html" class="button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="sec4">
+        <div class="faq-header">
+            <a href="#sec4">FAQ</a>
+            <h3>Frequently Asked Questions</h3>
+        </div>
+        <div class="faq-section">
+            <div class="faq-item">
+                <h5 class="question">How do I sign up for
+                    QuizWhiz <span class="arrow"></span></h5>
+                <div class="answer">
+                    <p>To sign up for QuizWhiz, simply visit our
+                        website and click on the Sign Up. Fill out the required
+                        information, including your name, email address and
+                        password.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h5 class="question">What type of quizes can I
+                    find on QuizWhiz? <span class="arrow"></span></h5>
+                <div class="answer">
+                    <p>To sign up for QuizWhiz, simply visit our
+                        website and click on the Sign Up button. Fill out the required
+                        information, including your name, email address and
+                        password.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h5 class="question">Can I challange my friends
+                    on QuizWhiz? <span class="arrow"></span></h5>
+                <div class="answer">
+                    <p>To sign up for QuizWhiz, simply visit our
+                        website and click on the Sign Up button. Fill out the required
+                        information, including your name, email address and
+                        password.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h5 class="question">Is there a limit time for
+                    completting quizzes QuizWhiz? <span class="arrow"></span></h5>
+                <div class="answer">
+                    <p>To sign up for QuizWhiz, simply visit our
+                        website and click on the Sign Up button. Fill out the required
+                        information, including your name, email address and
+                        password.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h5 class="question">Is QuizWhiz accessible on
+                    mobile? <span class="arrow"></span></h5>
+                <div class="answer">
+                    <p>To sign up for QuizWhiz, simply visit our
+                        website and click on the Sign Up button. Fill out the required
+                        information, including your name, email address and
+                        password.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="pcontainer">
+            <img src="../assets/LogoII.svg" alt="img">
+            <h6>Fun and interactive <br> way to test your knowledge</h6>
+        </div>
+
+        <div class="footerhead">
+            <h6><a href="../html/home.html">Home</a></h6>
+            <h6><a href="#sec3">About</a></h6>
+            <h6><a href="#sec2">Features</a></h6>
+        </div>
+
+        <div class="footerinput">
+            <h5>Join our newsletter</h5>
+            <input type="text" id="p-box" placeholder="Your email address">
+            <button id="footerb" onclick="submitEmail()">Submit</button>
+            <p>Follow us on our social media:</p>
+
+            <div class="footerimages">
+                <img src="../assets/google(2).png" alt="footimg1">
+                <img src="../assets/facebook-icon-13-256.png" alt="img2">
+                <img src="../assets/images (2).png" alt="img3">
+            </div>
+        </div>
+
+        <div class="bottom">
+            <h5 class="footerend">All rights reserved @ 2023 QuizWhiz</h5>
+            <p class="footerterms">Privacy | Terms</p>
+        </div>
+    </footer>
+
+
+    <script src="../script/home.js"></script>
 </body>
 
 </html>
