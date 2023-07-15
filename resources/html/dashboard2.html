@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
+    <link rel="stylesheet" href="../css/dashboard2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo">
+            <button id="navButton" onclick="toggle()"></button>
+            <div id="rightSide">
+                <button id="enterCode"><a href="../html/entercode.html">Enter Code</a></button>
+                <button id="createQuiz">Create Quiz</button>
+                <img src="../assets/bell (1).png" id="notifsIcon" alt="notifications icon">
+                <img src="../assets/User icon.png" id="profilePic" alt="profile picture">
+            </div>
+        </nav>
+    </header>
+
+    <div class="db-sidebar">
+        <ul>
+            <li><a class="dashboard" href="../html/dashboard.html"><img src="../assets/home-icons/dashboard (2).png"
+                        class="icon" data-src-hover="../assets/home-icons/Vector (3).svg" alt="dashboard">Dashboard</a>
+            </li>
+            <li><a class="myQuizzes" href="../html/user-dashboard.html"><img
+                        src="../assets/user-dashboard-icons/list (1).png" class="icon"
+                        data-src-hover="../assets/user-dashboard-icons/list.png" alt="myQuizzes">My Quizzes</a>
+            </li>
+            <li id="logoutBtn"><a class="logout" ><img
+                src="../assets/mdi_logout.svg" class="icon"
+                data-src-hover="../assets/logout.png" alt="logout">Log Out</a>
+            </li>
+        </ul>
+    </div>
+
+    <img id="toggleArrow" src="../assets/right-arrow-black-triangle.png" alt="toggle arrow">
+
+
+    <section class="main">
+        <div class="createquiz">
+            <h1>
+                Create Quiz
+            </h1>
+            <p>
+                Let's create your first quiz - John
+            </p>
+            <img class="orderedlist" src="../assets/dashboard-2-asset/Frame 1000003633.svg" alt="">
+        </div>
+        <div>
+            <h3>
+                Please pick a quiz type.
+            </h3>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="../assets/dashboard-2-asset/Frame 1000003559.png" alt="">
+                    <h4>Multiple Choice</h4>
+                    <p>This allows your users to pick one correct answer from the questions</p>
+                </div>  
+                <div class="grid-item">
+                    <img src="../assets/dashboard-2-asset/monogram (2).png" alt="">
+                    <h4>Type Answer</h4>
+                    <p>This allows your users to pick one correct answer from the questions</p>
+                </div>  
+                <div class="grid-item">
+                    <img src="../assets/dashboard-2-asset/monogram (2).png" alt="">
+                    <h4>Multiple Response</h4>
+                    <p>This allows your users to pick one correct answer from the questions</p>
+                </div>  
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="../assets/dashboard-2-asset/monogram (1).png" alt="">
+                    <h4>True or False</h4>
+                    <p>This allows your users to pick one correct answer from the questions</p>
+                </div>  
+                <div class="grid-item">
+                    <img src="../assets/dashboard-2-asset/Frame 1000003559.png" alt="">
+                    <h4>Recorder</h4>
+                    <p>This allows your users to pick one correct answer from the questions</p>
+                </div>  
+                <div class="grid-item">
+                    <img src="../assets/dashboard-2-asset/Frame 1000003559.png" alt="">
+                    <h4>Dropdown</h4>
+                    <p>This allows your users to pick one correct answer from the questions</p>
+                </div>     
+            </div> 
+        </div>
+        <div class="animation-container">
+            <img src="../assets/dashboard-2-asset/Property 1=Variant8.png" alt="" class="animation-item" id="image 1">
+            <img src="../assets/dashboard-2-asset/Property 1=level 2.png" alt="" class="animation-item" id="image 2">
+            <img src="../assets/dashboard-2-asset/Property 1=Level 3.png" alt="" class="animation-item" id="image 3">
+            <img src="../assets/dashboard-2-asset/Property 1=Level 4.png" alt="" class="animation-item" id="image 4">
+        </div>    
+    </section> 
+    <script src="../script/dashboard2.js"></script>          
+</body> 
+</html>                      
