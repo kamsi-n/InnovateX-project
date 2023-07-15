@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  width: 100vw;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 146px;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  left: 0;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid rgba(124, 124, 124, 0.01);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+#logo {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  left: 20px;
+  top: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+#rightSide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#enterCode {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 20px 50px;
+  border-radius: 8px;
+  width: 60px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.db-sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.db-sidebar a:hover {
+  background-color: white;
+  color: #280340;
+}
+
+#enterCode a {
+  color: #280340;
+  text-decoration: none;
+}
+
+#createQuiz {
+  background-color: #5b0792;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 20px 50px;
+  border-radius: 8px;
+  width: 60px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+#enterCode:hover {
+  box-shadow: #5b0792 0 0 1px 1px;
+}
+
+#createQuiz:hover {
+  background-color: #7e27b8;
+}
+
+#notifsIcon {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#notifsIcon:hover {
+  background-color: #7e27b844;
+  cursor: pointer;
+}
+
+#profilePic {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+#profilePic:hover {
+  box-shadow: #5b0792 0 0 5px 2px;
+}
+
+#navButton {
+  background-image: url("../assets/menu\ \(2\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin-top: -13px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.db-sidebar {
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  left: 0;
+  top: 90px;
+  background: #5b0792;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  visibility: visible;
+}
+
+.db-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.db-sidebar li {
+  margin-top: 10px;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.432);
+  color: #280340;
+}
+
+.db-sidebar img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  transition: filter 0.3s ease-in-out;
+}
+
+#logoutBtn {
+  margin-top: 300px;
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+  top: 67px;
+  width: 78vw;
+  margin-left: 20%;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* Default styles for the .grid-container */
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  /* Three equal-width columns */
+  gap: 19px;
+  /* Gap between grid items */
+  height: 100px;
+  width: 44rem;
+  margin-bottom: 40px;
+}
+
+.grid-container p {
+  font-size: 12px;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+  width: 12rem;
+  cursor: pointer;
+}
+
+.grid-container img {
+  width: 30px;
+  height: auto;
+  margin-bottom: -10px;
+  margin-right: 220px;
+}
+
+.grid-container h4 {
+  margin-top: -20px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.grid-container :hover {
+  background-color: #5b0792;
+  color: #fff;
+}
+
+.grid-item p {
+  color: #000;
+  font-size: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  line-height: 150%;
+}
+
+.orderedlist {
+  display: flex;
+  padding: 10px;
+}
+
+.animation-container img {
+  position: absolute;
+  width: 25%;
+  bottom: -30%;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#toggleArrow {
+  position: absolute;
+  visibility: hidden;
+  filter: opacity(80%);
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .grid-container {
+    /* Change the flex direction to vertical for smaller screens */
+    flex-direction: column;
+
+    /* Adjust the width to fit the screen */
+    height: 100%;
+  }
+
+  #navButton {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+  }
+
+  #logo {
+    top: 25px;
+    width: 30%;
+    height: 35%;
+  }
+
+  .db-sidebar {
+    visibility: hidden;
+  }
+
+  #rightSide {
+    visibility: hidden;
+    background-color: rgba(128, 128, 128, 0.644);
+    flex-direction: column-reverse;
+    width: 25%;
+    right: 0;
+    top: 55px;
+    z-index: 1;
+  }
+
+  #rightSide img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #rightSide #notifsIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  #enterCode,
+  #createQuiz {
+    padding: 10px 25px;
+    font-size: 10px;
+  }
+
+  #toggleArrow {
+    visibility: visible;
+  }
+}

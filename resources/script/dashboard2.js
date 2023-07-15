@@ -1,3 +1,18 @@
+function animateImages() {
+  const images = document.querySelectorAll('.animation-item');
+
+  // Loop through each image
+  images.forEach((image, index) => {
+    // Set a delay for each image to start animating
+    setTimeout(() => {
+      image.style.opacity = 1; // Set opacity to 1 to fade in the image
+    }, 1000 * index); // Delay each image by 1 second
+  });
+}
+
+// Call the animateImages function repeatedly
+setInterval(animateImages, 1000);
+
 const links = document.querySelectorAll('.db-sidebar a');
 links.forEach((link) => {
   const icon = link.querySelector('img');
@@ -27,20 +42,6 @@ logo.addEventListener('click', () => {
   window.location.href = '../html/home.html';
 });
 
-const svgFiles = ['../assets/svg animated files/Property 1=amico (1).svg',
-  '../assets/svg animated files/Property 1=level 2.svg',
-  '../assets/svg animated files/Property 1=Level 3.svg',
-  '../assets/svg animated files/Property 1=Level 3.svg',
-  '../assets/svg animated files/Property 1=Level 3.svg'];
-
-const svgContainer = document.getElementById('animation');
-let currentIndex = 0;
-
-setInterval(() => {
-  svgContainer.style.backgroundImage = `url('${svgFiles[currentIndex]}')`;
-  currentIndex = (currentIndex + 1) % svgFiles.length;
-}, 1000);
-
 const button = document.getElementById('navButton');
 button.addEventListener('click', () => {
   const nav = document.getElementById('rightSide');
@@ -58,12 +59,12 @@ toggle.addEventListener('click', () => {
   }
 });
 
-const start = document.querySelector('.one');
-start.addEventListener('click', () => {
-  window.location.href = '../html/dashboard2.html';
-});
-
 const logout = document.getElementById('logoutBtn');
 logout.addEventListener('click', () => {
   window.location.href = '../html/signin.html';
+});
+
+const cards = document.querySelector('.grid-item');
+cards.addEventListener('click', () => {
+  window.location.href = '../html/dashboard.html';
 });

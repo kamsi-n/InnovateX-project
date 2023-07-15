@@ -18,4 +18,3 @@ setInterval(() => {
   display.innerHTML = displayText[currentIndex];
   currentIndex = (currentIndex + 1) % displayText.length;
 }, 1000);
-

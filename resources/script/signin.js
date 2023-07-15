@@ -1,6 +1,6 @@
 const signupButton = document.querySelector('.signUpBtn');
 signupButton.addEventListener('click', () => {
-  window.location.href = "https://kamsi-n.github.io/InnovateX-project/index.html";
+  window.location.href = 'https://kamsi-n.github.io/InnovateX-project/index.html';
 });
 
 const logo = document.getElementById('logo');
