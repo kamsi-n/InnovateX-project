@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="../assets/LogoII.svg" alt="QuizWhizlogo">
+            </div>
+            <div class="signUp">
+                <p>Don't have an account?</p>
+                <button class="signUpBtn" type="button">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <div class="container">
+        <form>
+            <img class="profilePic" src="../assets/User icon.png" alt="profile picture">
+            <h2>Welcome Back</h2>
+            <p class="signInDesc">Sign in your account</p>
+
+            <div class="slot">
+                <label class="et"><b>Email</b></label>
+                <input id="signInEmail" type="email" name="emailAddress" placeholder="Enter email address" required>
+            </div>
+
+            <div class="slot">
+                <label class="pt"><b>Password</b></label>
+                <input id="password" type="password" name="password" placeholder="Enter password" required>
+                <span id="showHideToggle">Show</span>
+            </div>
+
+            <input type="submit" id="signInBtn" value="Sign In">
+        </form>
+    </div>
+
+    <div id="animation1"></div>
+    <div id="animation2"></div>
+
+    <footer>
+        <div class="footerContent">
+            <p class="p1">All rights reserved @ 2023 QuizWhiz</p>
+            <p class="p2">Privacy | Terms</p>
+        </div>
+    </footer>
+
+    <script src="../script/signin.js"></script>
+</body>
+
+</html>

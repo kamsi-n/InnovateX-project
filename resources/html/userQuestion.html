@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="../css/question.css">
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo">
+            <button id="navButton" onclick="toggle()"></button>
+            <div id="rightSide">
+                <button id="enterCode"><a href="../html/entercode.html">Enter Code</a></button>
+                <button id="createQuiz">Create Quiz</button>
+                <img src="../assets/bell (1).png" id="notifsIcon" alt="notifications icon">
+                <img src="../assets/User icon.png" id="profilePic" alt="profile picture">
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="card">
+            <div class="innerCard">
+                <div class="top-row">
+                    <div class="btn1">
+                        <img src="../assets/material-symbols_dashboard-outline.png" alt="">
+                        <p>Question List</p>
+                    </div>
+                    <div class="db-btn">
+                        <img src="../assets/material-symbols_dashboard-outline.png" alt="">
+                    </div>
+                    <p id="timer">00:00</p>
+                </div>
+
+                <div class="questionCard">
+                    <div class="text">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente a laborum ullam
+                            voluptates mollitia ducimus dicta, aspernatur tempora minus, inventore dolores adipisci vel
+                            esse?</h1>
+                        <div class="one">
+                            <input type="radio" name="options" id="option1">
+                            <label for="options">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                                reprehenderit!</label>
+                        </div>
+                        <div class="one">
+                            <input type="radio" name="options" id="option2">
+                            <label for="options">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
+                                vel.</label>
+                        </div>
+                        <div class="one">
+                            <input type="radio" name="options" id="option3">
+                            <label for="options">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Necessitatibus, alias!</label>
+                        </div>
+                    </div>
+                    <div class="image"></div>
+                </div>
+
+                <div class="bottom-row">
+                    <div class="point">
+                        <p>Your Point: 30 0f 100</p>
+                    </div>
+                    <div class="q-number">
+                        <p>Question 4 of 10</p>
+                    </div>
+                    <div class="submit">
+                        <img src="../assets/home-icons/dashboard (2).png" alt="">
+                        <p>Submit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="../html/home.html"><div class="closeBtn"></div></a>
+    </div>
+
+    <div class="popupContent">
+      <div id="loading"></div>
+
+      <div id="getCodeLink">
+            <img id="close" src="../assets/Frame 1000003679.svg" alt="toprow">
+            <div class="purpleCard">
+                <img class="success" src="../assets/Successmark.svg" alt="">
+                <h3>Publishing  is complete</h3>
+                <p>The “Hist..” quiz has been successfully published into a shareable link</p>
+                <img class="rafiki" src="../assets/rafiki.png" alt="">
+                <button id="send">Send</button>
+            </div>
+            <img id="bottomrow" src="../assets/Frame 1000003680.svg" alt="bottomrow">
+      </div>
+    </div>
+
+    <div id="sendOverlay">
+        <img id="close2" src="../assets/Frame 1000003679.svg" alt="">
+        <div class="whiteCard">
+            <h2>Send quiz via email</h2>
+            <form action="https://formspree.io/f/mleyedek" method="post">
+                <label>
+                    To
+                    <input type="email" name="email" placeholder="Email, comma separated">
+                </label>
+                <label>
+                    Subject
+                    <textarea name="Subject"></textarea>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" placeholder="I've invited you to take a quiz"></textarea>
+                </label>
+                <button id="sendBtn" type="submit">Send</button>
+            </form>
+        </div>
+        <img id="copyLink" src="../assets/Frame 1000003678.svg" alt="">
+        <div id="sendAlert">
+            <img src="../assets/Icon.svg" alt="">
+            <p>Successful. Sent to:</p>
+        </div>
+    </div>
+
+    <script src="../script/question.js"></script>
+</body>
+
+</html>
