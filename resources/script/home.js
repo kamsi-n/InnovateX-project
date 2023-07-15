@@ -34,3 +34,27 @@ const logo = document.getElementById('.logo');
 logo.addEventListener('click', () => {
   window.location.href = 'resources/html/home.html';
 });
+
+// Get all the question elements
+const questions = document.querySelectorAll('.faq-section h5');
+// Attach click event listeners to each question
+questions.forEach((question) => {
+  question.addEventListener('click', () => {
+    // Toggle the active class on the clicked question
+    question.classList.toggle('active');
+    // Get the next sibling element (answer)
+    const answer = question.nextElementSibling;
+    // Toggle the answer's visibility
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+  });
+});
+const question = document.querySelectorAll('.faq-section h5.question');
+question.forEach((question) => {
+  question.addEventListener('click', () => {
+    question.classList.toggle('clicked');
+  });
+});

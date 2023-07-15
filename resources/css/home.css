@@ -80,6 +80,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .HP-SignUpBtn {
@@ -258,6 +259,8 @@ hr {
 
 .text-container1 p {
   color: #353535;
+  border-bottom: #d3b3e9 1px solid;
+  padding-bottom: 10px;
 }
 
 .text-container1 hr {
@@ -337,14 +340,118 @@ hr {
   padding: 0 145px;
 }
 
-.sec3Card button {
+.sec3Card .button {
   background-color: white;
   color: #5b0792;
   font-size: 15px;
   border: none;
   border-radius: 4px;
   padding: 7px;
+  text-decoration: none;
   cursor: pointer;
+}
+
+.sec3Card .button:hover {
+  color: white;
+  background-color: #692597e3;
+}
+
+#sec4 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+}
+
+.faq-section {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  height: 50%;
+}
+
+.faq-header {
+  width: 50%;
+  height: 50%;
+  padding: 30px;
+}
+
+.faq-header h3 {
+  font-size: 48px;
+  color: #280340;
+  margin-top: 5px;
+}
+
+.faq-section h5.question::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 23rem;
+  height: 1px;
+  background-color: #b3b5b8;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.faq-section h5.question.clicked::before {
+  opacity: 0;
+}
+
+.faq-item {
+  margin-bottom: 50px;
+}
+
+.faq-section .answer {
+  text-align: left;
+  display: none;
+  margin-left: auto;
+}
+
+.faq-section .answer::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 1px;
+  background-color: #b3b5b8;
+  margin-top: 5px;
+  left: 0;
+}
+
+.faq-section h5 {
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  color: #330452;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.faq-section h5 .arrow {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/FILL\ ICON.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+  margin: -11px -54px 1px 1px;
+}
+
+.faq-section h5.active .arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-section h5.active::after {
+  content: "";
+}
+
+.faq-section p {
+  font-size: 12px;
 }
 
 .signIn button:hover {
@@ -500,7 +607,6 @@ hr {
 
   .footer {
     flex-direction: column;
-    top: 500px;
   }
 
   .pcontainer {
@@ -513,11 +619,24 @@ hr {
     justify-self: center;
     align-self: center;
   }
+
+  #sec4 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .faq-section h5.question::before {
+    width: 143%;
+  }
+
+  .faq-header h3 {
+    font-size: 6vw;
+  }
 }
 
 .footer {
   position: relative;
-  margin-top: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -587,9 +706,17 @@ hr {
   margin-top: 34px;
 }
 
-.footerhead h6 {
+.footerhead a {
+  text-decoration: none;
+  color: black;
   margin: 9px;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.footerhead h6 :hover {
+  border: none;
+  padding: 0;
 }
 
 .footerend {
@@ -631,13 +758,21 @@ hr {
     width: 100px;
   }
 
-  .footer {
-    top: 800px;
-  }
-
   .bottom {
     position: relative;
     margin-left: 10px;
     margin-top: -20px;
+  }
+
+  .faq-header {
+    padding-right: 130px;
+  }
+
+  .faq-header h3 {
+    font-size: 30px;
+  }
+
+  .faq-section {
+    padding-right: 130px;
   }
 }

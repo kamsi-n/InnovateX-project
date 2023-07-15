@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
+    <link rel="stylesheet" href="../css/user-dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo">
+            <button id="navButton" onclick="toggle()"></button>
+            <div id="rightSide">
+                <button id="enterCode"><a href="../html/entercode.html">Enter Code</a></button>
+                <button id="createQuiz">Create Quiz</button>
+                <img src="../assets/bell (1).png" id="notifsIcon" alt="notifications icon">
+                <img src="../assets/User icon.png" id="profilePic" alt="profile picture">
+            </div>
+        </nav>
+    </header>
+
+    <div class="db-sidebar">
+        <ul>
+            <li><a class="dashboard" href="../html/dashboard.html"><img src="../assets/home-icons/dashboard (2).png"
+                        class="icon" data-src-hover="../assets/home-icons/Vector (3).svg" alt="dashboard">Dashboard</a>
+            </li>
+            <li><a class="myQuizzes" href="../html/user-dashboard.html"><img
+                        src="../assets/user-dashboard-icons/list (1).png" class="icon"
+                        data-src-hover="../assets/user-dashboard-icons/list.png" alt="myQuizzes">My Quizzes</a>
+            </li>
+            <li id="logoutBtn"><a class="logout" href="https://kamsi-n.github.io/InnovateX-project/index.html"><img
+                        src="../assets/mdi_logout.svg" class="icon"
+                        data-src-hover="../assets/logout.png" alt="logout">Log Out</a>
+            </li>
+        </ul>
+    </div>
+
+    <img id="toggleArrow" src="../assets/right-arrow-black-triangle.png" alt="toggle arrow">
+
+    <div class="mainBody">
+        <h1>My Quizzes</h1>
+        <p>You can view and edit all created quiz from this module.</p>
+
+        <div class="quizCards">
+            <img src="../assets/user-dashboard-icons/Frame 1000003719.svg" alt="">
+            <div class="desc">
+                <p>Quiz</p>
+                <h5>Shopping Test</h5>
+                <div class="innerDesc">
+                  <img src="../assets/user-dashboard-icons/list.png" alt="">
+                  <p>7 Questions</p>
+                </div>
+                <div class="innerDesc2">
+                    <img src="../assets/user-dashboard-icons/Ellipse 2320.svg" alt="">
+                    <p>John Doe <span>|</span> 34 minutes ago</p>
+                </div>
+            </div>
+
+            <div class="button">
+                <p>Share</p>
+                <img src="../assets/user-dashboard-icons/material-symbols_share.svg" alt="">
+            </div>
+            <div class="button2">
+                <p>Edit</p>
+                <img src="../assets/user-dashboard-icons/material-symbols_edit.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="quizCards">
+            <img src="../assets/user-dashboard-icons/Frame 1000003719.svg" alt="">
+            <div class="desc">
+                <p>Quiz</p>
+                <h5>Shopping Test</h5>
+                <div class="innerDesc">
+                  <img src="../assets/user-dashboard-icons/list.png" alt="">
+                  <p>7 Questions</p>
+                </div>
+                <div class="innerDesc2">
+                    <img src="../assets/user-dashboard-icons/Ellipse 2320.svg" alt="">
+                    <p>John Doe <span>|</span> 34 minutes ago</p>
+                </div>
+            </div>
+
+            <div class="button">
+                <p>Share</p>
+                <img src="../assets/user-dashboard-icons/material-symbols_share.svg" alt="">
+            </div>
+            <div class="button2">
+                <p>Edit</p>
+                <img src="../assets/user-dashboard-icons/material-symbols_edit.svg" alt="">
+            </div>
+        </div>
+
+        <div class="quizCards">
+            <img src="../assets/user-dashboard-icons/Frame 1000003719.svg" alt="">
+            <div class="desc">
+                <p>Quiz</p>
+                <h5>Shopping Test</h5>
+                <div class="innerDesc">
+                  <img src="../assets/user-dashboard-icons/list.png" alt="">
+                  <p>7 Questions</p>
+                </div>
+                <div class="innerDesc2">
+                    <img src="../assets/user-dashboard-icons/Ellipse 2320.svg" alt="">
+                    <p>John Doe <span>|</span> 34 minutes ago</p>
+                </div>
+            </div>
+
+            <div class="button">
+                <p>Share</p>
+                <img src="../assets/user-dashboard-icons/material-symbols_share.svg" alt="">
+            </div>
+            <div class="button2">
+                <p>Edit</p>
+                <img src="../assets/user-dashboard-icons/material-symbols_edit.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../script/user-dashboard.js"></script>
+</body>
+
+</html>

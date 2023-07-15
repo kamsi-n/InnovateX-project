@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
@@ -20,7 +18,7 @@
             <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo">
             <button id="navButton" onclick="toggle()"></button>
             <div id="rightSide">
-                <button id="enterCode">Enter Code</button>
+                <button id="enterCode"><a href="../html/entercode.html">Enter Code</a></button>
                 <button id="createQuiz">Create Quiz</button>
                 <img src="../assets/bell (1).png" id="notifsIcon" alt="notifications icon">
                 <img src="../assets/User icon.png" id="profilePic" alt="profile picture">
@@ -33,56 +31,61 @@
             <li><a class="dashboard" href="../html/dashboard.html"><img src="../assets/home-icons/dashboard (2).png"
                         class="icon" data-src-hover="../assets/home-icons/Vector (3).svg" alt="dashboard">Dashboard</a>
             </li>
-            <li><a href="#"><img src="../assets/home-icons/vector2.svg" alt="Quizzes">Quizzes</a></li>
-            <li><a href="#"><img src="../assets/home-icons/vector2.svg" alt="My Library">My Library</a></li>
-            <li><a href="#"><img src="../assets/home-icons/vector3.svg" alt="Reports">Reports</a></li>
+            <li><a class="myQuizzes" href="../html/user-dashboard.html"><img
+                        src="../assets/user-dashboard-icons/list (1).png" class="icon"
+                        data-src-hover="../assets/user-dashboard-icons/list.png" alt="myQuizzes">My Quizzes</a>
+            </li>
+            <li id="logoutBtn"><a class="logout" ><img
+                src="../assets/mdi_logout.svg" class="icon"
+                data-src-hover="../assets/logout.png" alt="logout">Log Out</a>
+            </li>
         </ul>
     </div>
 
     <img id="toggleArrow" src="../assets/right-arrow-black-triangle.png" alt="toggle arrow">
 
     <div class="mainBody">
-    <div class="content">
-        <h1>Hey John <img src="../assets/🦆 emoji _waving hand sign_.svg" alt="emoji waving hand"></h1>
-        <p>Let's get started by making some entertaining and interactive quizzes.
-            Quick and simple. To begin, click the + icon below.</p>
-    </div>
-    <div class="quizCards">
-        <div class="one">
-            <p>Create Quiz</p>
-            <img src="../assets/dashboard-icons/Ellipse 2322.svg" alt="">
-            <h1>+</h1>
+        <div class="content">
+            <h1>Hey John <img src="../assets/🦆 emoji _waving hand sign_.svg" alt="emoji waving hand"></h1>
+            <p>Let's get started by making some entertaining and interactive quizzes.
+                Quick and simple. To begin, click the + icon below.</p>
         </div>
-        <div class="two">
-            <p>Total Quiz Created</p>
-            <h1>0</h1>
+        <div class="quizCards">
+            <div class="one">
+                <p>Create Quiz</p>
+                <img src="../assets/dashboard-icons/Ellipse 2322.svg" alt="">
+                <h1>+</h1>
+            </div>
+            <div class="two">
+                <p>Total Quiz Created</p>
+                <h1>0</h1>
+            </div>
+            <div class="three">
+                <p>Total Quiz Created</p>
+                <h1>0</h1>
+            </div>
+            <div class="four">
+                <p>Total Quiz Created</p>
+                <h1>0</h1>
+            </div>
         </div>
-        <div class="three">
-            <p>Total Quiz Created</p>
-            <h1>0</h1>
-        </div>
-        <div class="four">
-            <p>Total Quiz Created</p>
-            <h1>0</h1>
-        </div>
-    </div>
 
-    <h2>Activities</h2>
+        <h2>Activities</h2>
 
-    <div class="activities">
-        <div class="act-1">
-            <p class="detail"><b>Daniella Cole</b> just answered quiz <b>Learning about Adobe XD</b></p>
-            <p class="time">Time - 11:30 am, 26/03/2023</p>
+        <div class="activities">
+            <div class="act-1">
+                <p class="detail"><b>Daniella Cole</b> just answered quiz <b>Learning about Adobe XD</b></p>
+                <p class="time">Time - 11:30 am, 26/03/2023</p>
+            </div>
+            <div class="act-2">
+                <p class="detail"><b>Daniella Cole</b> just answered quiz <b>Learning about Adobe XD</b></p>
+                <p class="time">Time - 11:30 am, 26/03/2023</p>
+            </div>
+            <div class="act-3">
+                <p class="detail"><b>Daniella Cole</b> just answered quiz <b>Learning about Adobe XD</b></p>
+                <p class="time">Time - 11:30 am, 26/03/2023</p>
+            </div>
         </div>
-        <div class="act-2">
-            <p class="detail"><b>Daniella Cole</b> just answered quiz <b>Learning about Adobe XD</b></p>
-            <p class="time">Time - 11:30 am, 26/03/2023</p>
-        </div>
-        <div class="act-3">
-            <p class="detail"><b>Daniella Cole</b> just answered quiz <b>Learning about Adobe XD</b></p>
-            <p class="time">Time - 11:30 am, 26/03/2023</p>
-        </div>
-    </div>
     </div>
 
     <div id="animation"></div>

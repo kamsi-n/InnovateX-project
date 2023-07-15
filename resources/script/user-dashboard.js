@@ -11,11 +11,11 @@ links.forEach((link) => {
   });
 });
 
-const currentPageUrl = '../html/dashboard.html';
-const sbLinks = document.querySelectorAll('.db-sidebar ul li .dashboard');
+const currentPageUrl = '../html/user-dashboard.html';
+const sbLinks = document.querySelectorAll('.db-sidebar ul li .myQuizzes');
 
 sbLinks.forEach((link) => {
-  if (currentPageUrl === '../html/dashboard.html') {
+  if (currentPageUrl === '../html/user-dashboard.html') {
     link.classList.add('active');
   } else {
     link.classList.remove('active');
