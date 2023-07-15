@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 146px;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  left: 0;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid rgba(124, 124, 124, 0.01);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+#logo {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  left: 20px;
+  top: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+#rightSide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#enterCode {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 20px 50px;
+  border-radius: 8px;
+  width: 60px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #280340;
+  cursor: pointer;
+}
+
+#createQuiz {
+  background-color: #5b0792;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 20px 50px;
+  border-radius: 8px;
+  width: 60px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+#enterCode:hover {
+  text-decoration: underline solid #280340 3px;
+}
+
+#createQuiz:hover {
+  background-color: #7e27b8;
+}
+
+#notifsIcon {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#notifsIcon:hover {
+  background-color: #7e27b844;
+  cursor: pointer;
+}
+
+#profilePic {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+#profilePic:hover {
+  box-shadow: #5b0792 0 0 5px 2px;
+}
+
+#navButton {
+  background-image: url("../assets/menu\ \(2\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin-top: -13px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.db-sidebar {
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  left: 0;
+  top: 90px;
+  background: #5b0792;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  visibility: visible;
+}
+
+.db-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.db-sidebar li {
+  margin-top: 10px;
+}
+
+.db-sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.db-sidebar a:hover {
+  background-color: white;
+  color: #280340;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.432);
+  color: #280340;
+}
+
+.db-sidebar img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  transition: filter 0.3s ease-in-out;
+}
+
+#toggleArrow {
+  position: absolute;
+  visibility: hidden;
+  filter: opacity(80%);
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #navButton {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+  }
+
+  #logo {
+    top: 25px;
+    width: 30%;
+    height: 35%;
+  }
+
+  .db-sidebar {
+    visibility: hidden;
+  }
+
+  .mainBody {
+    margin-left: -25%;
+  }
+
+  #rightSide {
+    visibility: hidden;
+    background-color: rgba(128, 128, 128, 0.644);
+    flex-direction: column-reverse;
+    width: 25%;
+    right: 0;
+    top: 55px;
+    z-index: 1;
+  }
+
+  #rightSide img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #rightSide #notifsIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  #enterCode,
+  #createQuiz {
+    padding: 10px 25px;
+    font-size: 10px;
+  }
+
+  #toggleArrow {
+    visibility: visible;
+  }
+}

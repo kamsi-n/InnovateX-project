@@ -4,7 +4,7 @@
   "description": "Create a quiz maker that will allow users to create a quiz and then the quiz will be displayed to the user.",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "json-server --watch ./database/db.json"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +14,13 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
-    "hint": "^7.1.9",
+    "hint": "^7.1.10",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3"
   }
 }
