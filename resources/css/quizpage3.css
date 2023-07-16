@@ -372,6 +372,9 @@ nav {
   margin-bottom: 10px;
 }
 
+ul {
+  list-style-type: circle;
+}
 li input {
   width: 35%;
   font-size: 15px;
