@@ -144,6 +144,10 @@ nav {
   visibility: visible;
 }
 
+ul {
+  list-style-type: circle;
+}
+
 .db-sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -372,9 +376,8 @@ nav {
   margin-bottom: 10px;
 }
 
-ul {
-  list-style-type: circle;
-}
+
+
 li input {
   width: 35%;
   font-size: 15px;
