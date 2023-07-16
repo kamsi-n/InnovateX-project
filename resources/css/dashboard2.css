@@ -201,8 +201,10 @@ nav {
 .grid-container {
   display: flex;
   flex-direction: row;
+
   /* Three equal-width columns */
   gap: 19px;
+
   /* Gap between grid items */
   height: 100px;
   width: 44rem;

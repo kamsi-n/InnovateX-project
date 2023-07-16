@@ -11,11 +11,11 @@ links.forEach((link) => {
   });
 });
 
-const currentPageUrl = '../html/dashboard.html';
-const sbLinks = document.querySelectorAll('.db-sidebar ul li .dashboard');
+const currentPageUrl = '../html/quizpage3.html';
+const sbLinks = document.querySelectorAll('.db-sidebar ul li .myQuizzes');
 
 sbLinks.forEach((link) => {
-  if (currentPageUrl === '../html/dashboard.html') {
+  if (currentPageUrl === '../html/quizpage3.html') {
     link.classList.add('active');
   } else {
     link.classList.remove('active');
@@ -42,4 +42,9 @@ toggle.addEventListener('click', () => {
   } else {
     toggle.style.left = '21%';
   }
+});
+
+const publishbtn = document.querySelector('.buttons');
+publishbtn.addEventListener('click', () => {
+  window.location.href = '../html/question.html';
 });
