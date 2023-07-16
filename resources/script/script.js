@@ -158,7 +158,8 @@ setInterval(() => {
   currentIndex2 = (currentIndex2 + 1) % svgFiles2.length;
 }, 1000);
 
-const form = document.querySelector('form');
+const form = document.getElementById('form');
+
 function validateForm() {
   const username = document.getElementById('signUpUsername').value;
   const signUpEmail = document.getElementById('signUpEmail').value;
@@ -181,4 +182,31 @@ logo.addEventListener('click', () => {
 const signInButton = document.querySelector('.signInBtn');
 signInButton.addEventListener('click', () => {
   window.location.href = './resources/html/signin.html';
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Get the values of the input fields
+  const username = document.getElementById('signUpUsername').value;
+  const email = document.getElementById('signUpEmail').value;
+  const password = document.getElementById('password').value;
+
+  // Make the fetch request
+  fetch('http://102.36.176.228:4445/auth/signup', {
+    method: 'POST',
+    body: JSON.stringify({
+      name: username,
+      email,
+      password,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => console.error('Error:', error));
 });
