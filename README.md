@@ -21,3 +21,20 @@ This work is expected to be collaborative, with 11 contributors (4 Front-end, 4 
 ---
 
  This project is available and can be viewed with any browser, both on mobile view and desktop view.
+
+## Team InnovateX members
+---
+Product Design Team:
+ 1) [Murtala Shekoni](https://github.com/Toyinka)
+ 2) [Henry Ogbu]()
+ 1) [John Adeyemo]()
+
+Front-End Team:
+ 1) [Kamsi Nwokoro](https://github.com/kamsi-n)
+ 2) [Yvonne Aigbodioh](https://github.com/Yvonne3333)
+ 3) [Nnorom Ikemefula](https://github.com/normike)
+ 4) [Peculiar Wilfred](https://github.com/PeculiarW)
+
+Back-End Team:
+ 1) [Nwajei Chukwudi](https://github.com/Nwajeichukz)
+ 2) [Eze Chukwuemeka](https://github.com/Bigmee)
