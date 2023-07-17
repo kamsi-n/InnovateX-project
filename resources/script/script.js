@@ -172,7 +172,7 @@ function validateForm() {
   return false;
 }
 
-form.addEventListener('submit', validateForm);
+//form.addEventListener('submit', validateForm);
 
 const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {
@@ -193,7 +193,7 @@ form.addEventListener('submit', (e) => {
   const password = document.getElementById('password').value;
 
   // Make the fetch request
-  fetch('http://102.36.176.228:4445/auth/signup', {
+  fetch('http://102.36.176.228:4445', {
     method: 'POST',
     body: JSON.stringify({
       name: username,
