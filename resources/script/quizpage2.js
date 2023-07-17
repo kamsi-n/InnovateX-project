@@ -1,11 +1,11 @@
-const back = document.querySelector(".qpage-btn1");
-back.addEventListener("click", () => {
-    window.location.href = "../html/dashboard2.html";
+const back = document.querySelector('.qpage-btn1');
+back.addEventListener('click', () => {
+  window.location.href = '../html/dashboard2.html';
 });
 
-const next = document.querySelector(".qpage-btn");
-next.addEventListener("click", () => {
-    window.location.href = "../html/quizpage3.html";
+const next = document.querySelector('.qpage-btn');
+next.addEventListener('click', () => {
+  window.location.href = '../html/quizpage3.html';
 });
 
 const links = document.querySelectorAll('.db-sidebar a');
