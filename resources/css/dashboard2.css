@@ -251,9 +251,18 @@ nav {
   line-height: 150%;
 }
 
+.createquiz h1 , p{
+  margin-bottom: 20px;
+}
+
 .orderedlist {
   display: flex;
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
 }
 
 .animation-container img {
