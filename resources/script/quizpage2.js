@@ -1,17 +1,12 @@
-function animateImages() {
-  const images = document.querySelectorAll('.animation-item');
+const back = document.querySelector(".qpage-btn1");
+back.addEventListener("click", () => {
+    window.location.href = "../html/dashboard2.html";
+});
 
-  // Loop through each image
-  images.forEach((image, index) => {
-    // Set a delay for each image to start animating
-    setTimeout(() => {
-      image.style.opacity = 1; // Set opacity to 1 to fade in the image
-    }, 1000 * index); // Delay each image by 1 second
-  });
-}
-
-// Call the animateImages function repeatedly
-setInterval(animateImages, 1000);
+const next = document.querySelector(".qpage-btn");
+next.addEventListener("click", () => {
+    window.location.href = "../html/quizpage3.html";
+});
 
 const links = document.querySelectorAll('.db-sidebar a');
 links.forEach((link) => {
@@ -62,9 +57,4 @@ toggle.addEventListener('click', () => {
 const logout = document.getElementById('logoutBtn');
 logout.addEventListener('click', () => {
   window.location.href = '../html/signin.html';
-});
-
-const cards = document.querySelector('.grid-item');
-cards.addEventListener('click', () => {
-  window.location.href = '../html/quizpage2.html';
 });

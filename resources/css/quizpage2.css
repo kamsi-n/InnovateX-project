@@ -1,0 +1,450 @@
+*{
+    padding: 0;
+    margin: 0;
+   }
+
+   body {
+    width: 100vw;
+    font-family: Rubik, sans-serif;
+   }
+   
+   h3{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     padding: 13px;
+     margin-left: 5px; 
+   }
+   
+   .qpage img{
+     width: 7rem;
+     padding-left: 20rem;
+     padding-top: 20px;
+   }
+
+   .qpage p{
+     margin-left: 20px;
+     font-size: 14px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+   
+   .qpage-images{
+       height: 30px;
+       padding: 10px;
+       display: flex;
+   }
+   
+   .qpage-images img{
+       margin: 6px;
+       padding-left: 10px;
+   }
+
+   .qpage-images p{
+      margin: 10px;
+   }
+
+   .qpage-images p{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: small;
+       font-weight: bold;
+   }
+   
+   .qpage-form p{
+   padding-left: 15px;
+   margin: 5px;
+   font-size: small;
+   font-weight: bold;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
+   #qpage1 {
+      margin-left: 13px;
+      height: 1.5rem;
+      width: 30rem;
+      padding: 3px;
+      border-color: rgba(0.075, 0.075, 0.075, 0.075);
+      border-width: 3;
+      border-radius: 4px;
+   }
+   
+   ::placeholder{
+       color: rgba(128, 128, 128, 0.473);
+   }
+
+   .qpage-form1{
+     padding-top: 25px
+   }
+   
+   .qpage-form1 .underline{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       padding-left: 15px;
+       margin: 5px;
+       font-size: small;
+       font-weight: bold;
+   }
+   
+   .qpage-form1 p{
+       font-size: x-small;
+       padding-left: 14px;
+       font-weight: bolder;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
+   .qpage-form2{
+       padding-top: 25px;
+   }
+   
+   .qpage-form2 .underline{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       padding-left: 15px;
+       margin: 5px;
+       font-size: small;
+       font-weight: bolder;
+   }
+   
+   .qpage-form2 p{
+       font-size: x-small;
+       padding-left: 14px;
+       font-weight: bolder;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
+   .qpage-form3{
+       padding-top: 25px;
+   }
+   
+   .qpage-form3 .underline{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       padding-left: 15px;
+       margin: 5px;
+       font-size: small;
+       font-weight: bolder;
+   }
+   
+   .qpage-form3 p{
+       font-size: x-small;
+       padding-left: 14px;
+       font-weight: bolder;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
+   .qpage-form4{
+       padding-top: 25px;
+   }
+   
+   .qpage-form4 .underline{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       padding-left: 15px;
+       margin: 5px;
+       font-size: small;
+       font-weight: bolder;
+   }
+   
+   .qpage-form4 p{
+       font-size: x-small;
+       padding-left: 14px;
+       font-weight: bolder;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
+   .qpage-form5{
+       padding-top: 25px;
+   }
+   
+   .qpage-form5 .underline{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       padding-left: 15px;
+       margin: 5px;
+       font-size: small;
+       font-weight: bolder;
+   }
+   
+   .qpage-form5 p{
+       font-size: x-small;
+       padding-left: 14px;
+       font-weight: bolder;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
+   .qpage-btn{
+       margin-left: 25rem;
+       border: 0;
+       padding: 8px;
+       border-radius: 3px;
+       font-size: x-small;
+       font-weight: bolder;
+       background-color: purple;
+       color: white;
+       cursor: pointer;
+   }
+   
+   .qpage-btn1{
+       margin-left: 2rem;
+       background-color: white;
+       border-color: rgba(128, 128, 128, 0.103) ;
+       padding: 8px;
+       margin-top: 4rem;
+       border-radius: 3px;
+       font-size: x-small;
+       font-weight: bolder;
+       cursor: pointer;
+   }
+
+   .btimg{
+       width: 20%;
+       position: absolute;
+       right: 0;
+       margin-top: 20px;
+   }
+
+   .container {
+    position: relative;
+    top: 66px;
+    width: 78vw;
+    margin-left: 20%;
+    margin-top: 30px;
+   }
+
+   nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 146px;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    left: 0;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.01);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  #logo {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    left: 20px;
+    top: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  #rightSide {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  #enterCode {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 20px 50px;
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .db-sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+  }
+  
+  .db-sidebar a:hover {
+    background-color: white;
+    color: #280340;
+  }
+  
+  #enterCode a {
+    color: #280340;
+    text-decoration: none;
+  }
+  
+  #createQuiz {
+    background-color: #5b0792;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 20px 50px;
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #enterCode:hover {
+    box-shadow: #5b0792 0 0 1px 1px;
+  }
+  
+  #createQuiz:hover {
+    background-color: #7e27b8;
+  }
+  
+  #notifsIcon {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #notifsIcon:hover {
+    background-color: #7e27b844;
+    cursor: pointer;
+  }
+  
+  #profilePic {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+  
+  #profilePic:hover {
+    box-shadow: #5b0792 0 0 5px 2px;
+  }
+  
+  #navButton {
+    background-image: url("../assets/menu\ \(2\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-top: -13px;
+    visibility: hidden;
+    cursor: pointer;
+  }
+  
+  .db-sidebar {
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    left: 0;
+    top: 90px;
+    background: #5b0792;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    visibility: visible;
+  }
+  
+  .db-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .db-sidebar li {
+    margin-top: 10px;
+  }
+  
+  .active {
+    background-color: rgba(255, 255, 255, 0.432);
+    color: #280340;
+  }
+  
+  .db-sidebar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  #logoutBtn {
+    margin-top: 300px;
+    cursor: pointer;
+  }
+  
+  #toggleArrow {
+    position: absolute;
+    visibility: hidden;
+    filter: opacity(80%);
+    left: 0;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    #navButton {
+      visibility: visible;
+      position: absolute;
+      right: 0;
+    }
+  
+    #logo {
+      top: 25px;
+      width: 30%;
+      height: 35%;
+    }
+  
+    .db-sidebar {
+      visibility: hidden;
+    }
+  
+    #rightSide {
+      visibility: hidden;
+      background-color: rgba(128, 128, 128, 0.644);
+      flex-direction: column-reverse;
+      width: 25%;
+      right: 0;
+      top: 55px;
+      z-index: 1;
+    }
+  
+    #rightSide img {
+      width: 24px;
+      height: 24px;
+    }
+  
+    #rightSide #notifsIcon {
+      width: 30px;
+      height: 30px;
+    }
+  
+    #enterCode,
+    #createQuiz {
+      padding: 10px 25px;
+      font-size: 10px;
+    }
+  
+    #toggleArrow {
+      visibility: visible;
+    }
+
+    .container {
+        top: 70px;
+        right: 50px;
+    }
+  }
+  

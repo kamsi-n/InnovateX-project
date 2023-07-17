@@ -48,3 +48,8 @@ const publishbtn = document.querySelector('.buttons');
 publishbtn.addEventListener('click', () => {
   window.location.href = '../html/question.html';
 });
+
+const back = document.querySelector('.back');
+back.addEventListener('click', () => {
+  window.location.href = '../html/quizpage2.html';
+});
