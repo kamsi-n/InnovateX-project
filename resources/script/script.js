@@ -193,7 +193,7 @@ form.addEventListener('submit', (e) => {
   const password = document.getElementById('password').value;
 
   // Make the fetch request
-  fetch('http://102.36.176.228:4445', {
+  fetch('http://102.36.176.228:4445/auth/signup', {
     method: 'POST',
     body: JSON.stringify({
       name: username,
