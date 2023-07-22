@@ -35,11 +35,11 @@ logo.addEventListener('click', () => {
   window.location.href = 'resources/html/home.html';
 });
 
-// Get all the question elements
-const questions = document.querySelectorAll('.faq-section h5');
-// Attach click event listeners to each question
+const questions = document.querySelectorAll('.faq-section h5.question');
+
 questions.forEach((question) => {
   question.addEventListener('click', () => {
+    console.log('clicked');
     // Toggle the active class on the clicked question
     question.classList.toggle('active');
     // Get the next sibling element (answer)
@@ -50,11 +50,12 @@ questions.forEach((question) => {
     } else {
       answer.style.display = 'block';
     }
-  });
-});
-const question = document.querySelectorAll('.faq-section h5.question');
-question.forEach((question) => {
-  question.addEventListener('click', () => {
+    // Toggle the clicked class on the question
     question.classList.toggle('clicked');
   });
+});
+
+let btn = document.getElementById('testbtn');
+btn.addEventListener('click', () => {
+  console.log('clicked');
 });

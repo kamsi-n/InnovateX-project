@@ -368,7 +368,8 @@ hr {
   align-items: flex-start;
   width: 50%;
   height: 50%;
-}
+  z-index: 2;
+} 
 
 .faq-header {
   width: 50%;
@@ -404,8 +405,9 @@ hr {
 
 .faq-section .answer {
   text-align: left;
-  display: none;
+  display: block;
   margin-left: auto;
+  margin-top: 15px;
 }
 
 .faq-section .answer::after {
