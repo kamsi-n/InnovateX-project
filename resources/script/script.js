@@ -172,7 +172,7 @@ function validateForm() {
   return false;
 }
 
-//form.addEventListener('submit', validateForm);
+// form.addEventListener('submit', validateForm);
 
 const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {

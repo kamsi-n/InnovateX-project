@@ -55,7 +55,7 @@ questions.forEach((question) => {
   });
 });
 
-let btn = document.getElementById('testbtn');
+const btn = document.getElementById('testbtn');
 btn.addEventListener('click', () => {
   console.log('clicked');
 });
