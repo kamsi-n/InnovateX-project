@@ -26,7 +26,7 @@ This work is expected to be collaborative, with 11 contributors (4 Front-end, 4 
 ---
 Product Design Team:
  1) [Murtala Shekoni](https://github.com/Toyinka)
- 2) [Henry Ogbu]()
+ 2) [Henry Ogbu](https://github.com/hunrynavi)
  1) [John Adeyemo]()
 
 Front-End Team:
