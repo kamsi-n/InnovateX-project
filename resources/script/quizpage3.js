@@ -44,12 +44,67 @@ toggle.addEventListener('click', () => {
   }
 });
 
-const publishbtn = document.querySelector('.buttons');
-publishbtn.addEventListener('click', () => {
+const enterCode = document.getElementById('enterCode');
+enterCode.addEventListener('click', () => {
+  window.location.href = '../html/entercode.html';
+});
+
+const createquiz = document.getElementById('createQuiz');
+createquiz.addEventListener('click', () => {
+  window.location.href = '../html/dashboard.html';
+});
+
+const preview = document.querySelector('.button1');
+preview.addEventListener('click', () => {
   window.location.href = '../html/question.html';
 });
 
 const back = document.querySelector('.back');
 back.addEventListener('click', () => {
   window.location.href = '../html/quizpage2.html';
+});
+
+const add = document.querySelector('.add');
+add.addEventListener('click', () => {
+  const inputFields = document.querySelectorAll('input');
+
+  // Loop through each input field and clear its value
+  inputFields.forEach((inputField) => {
+    inputField.value = '';
+  });
+});
+
+
+// Retrieve the JWT token from local storage
+const jwtToken = localStorage.getItem('jwtToken');
+// Use the token for further requests
+console.log('JWT Token:', jwtToken);
+
+add.addEventListener('click', () => {
+
+  const questionE1 = document.getElementById('question').value;
+  const option1 = document.getElementById('option1').value;
+  const option2 = document.getElementById('option2').value;
+  const option3 = document.getElementById('option3').value;
+  const answerE1 = document.getElementById('answer').value;
+
+  fetch('http://102.36.176.228:4445/questions/add', {
+    method: 'POST',
+    body: JSON.stringify({
+      question: questionE1,
+      options: [option1, option2, option3],
+      point: 10, // You have hardcoded the point value to 10 in the code
+      answer: answerE1
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+      Authorization: `Bearer ${jwtToken}`
+    }
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    })
 });

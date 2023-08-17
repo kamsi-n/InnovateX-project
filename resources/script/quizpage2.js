@@ -5,6 +5,14 @@ back.addEventListener('click', () => {
 
 const next = document.querySelector('.qpage-btn');
 next.addEventListener('click', () => {
+  const timer = document.getElementById('quizTime').value;
+  localStorage.setItem('timer', timer);
+
+  const quizTitle = document.getElementById('quizTitle').value;
+  localStorage.setItem('title', quizTitle);
+
+  const quizDesc = document.getElementById('quizDesc').value;
+  localStorage.setItem('desc', quizDesc);
   window.location.href = '../html/quizpage3.html';
 });
 
@@ -58,3 +66,42 @@ const logout = document.getElementById('logoutBtn');
 logout.addEventListener('click', () => {
   window.location.href = '../html/signin.html';
 });
+
+
+
+/*
+next.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  // Get the values of the input fields
+  const title = document.getElementById('quizTitle').value;
+  const desc = document.getElementById('quizDesc').value;
+  const time = document.getElementById('quizTime').value;
+
+  // Test to ensure data is captured
+  let data = {
+    title,
+    desc,
+    time,
+  };
+  console.log(data);
+ 
+    // Make the fetch request
+    fetch('http://102.36.176.228:4445/questions/add', {
+      method: 'POST',
+      body: JSON.stringify({
+        title,
+        desc,
+        time,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => console.error('Error:', error)); 
+});
+*/

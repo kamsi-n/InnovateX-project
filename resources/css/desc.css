@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/Rectangle\ 5721.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 146px;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.01);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+#logo {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    left: 20px;
+    top: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+#rightSide {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#enterCode {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 20px 50px;
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    font-style: normal;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#enterCode a {
+    font-weight: 500;
+    color: #280340;
+    text-decoration: none;
+}
+
+#createQuiz {
+    background-color: #5b0792;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 20px 50px;
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#enterCode:hover {
+    box-shadow: #5b0792 0 0 1px 1px;
+}
+
+#createQuiz:hover {
+    background-color: #7e27b8;
+}
+
+#notifsIcon {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#notifsIcon:hover {
+    background-color: #7e27b844;
+    cursor: pointer;
+}
+
+#profilePic {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+#profilePic:hover {
+    box-shadow: #5b0792 0 0 5px 2px;
+}
+
+#navButton {
+    background-image: url("../assets/menu\ \(2\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-top: -13px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.card {
+    position: relative;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 3.9999992847442627px 3.9999992847442627px 0 rgba(0, 0, 0, 0.3), 0 7.999998569488525px 11.999999046325684px 5.999999523162842px rgba(0, 0, 0, 0.15);
+    width: 65vw;
+    height: 90vh;
+    margin-top: 66px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCard {
+    position: relative;
+    width: 60vw;
+    height: 85vh;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3.9999992847442627px 3.9999992847442627px 19.999996185302734px 0 rgba(0, 0, 0, 0.25);
+}
+
+.words {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 20% 15%;
+    color: white;
+    gap: 10px;
+}
+
+img {
+    height: 75vh;
+}
+
+#startQuiz {
+    background-color: #5b0792;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: last baseline;
+    white-space: nowrap;
+    margin: 10px;
+    padding: 20px 50px;
+    border-radius: 8px;
+    width: 60px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #navButton {
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
+
+    #logo {
+        top: 25px;
+        width: 30%;
+        height: 35%;
+    }
+
+    #rightSide {
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.205);
+        flex-direction: column-reverse;
+        width: 25%;
+        right: 0;
+        top: 55px;
+        z-index: 5;
+    }
+
+    #rightSide img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #rightSide #notifsIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    #enterCode,
+    #createQuiz {
+        padding: 10px 25px;
+        font-size: 10px;
+    }
+}

@@ -172,7 +172,7 @@ function validateForm() {
   return false;
 }
 
-// form.addEventListener('submit', validateForm);
+//form.addEventListener('submit', validateForm);
 
 const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {
@@ -184,29 +184,33 @@ signInButton.addEventListener('click', () => {
   window.location.href = './resources/html/signin.html';
 });
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', () => {
 
   // Get the values of the input fields
-  const username = document.getElementById('signUpUsername').value;
-  const email = document.getElementById('signUpEmail').value;
-  const password = document.getElementById('password').value;
+  const usernameE1 = document.getElementById('signUpUsername').value;
+  const emailE1 = document.getElementById('signUpEmail').value;
+  const passwordE1 = document.getElementById('password').value;
+  const confirmPasswordE1 = document.getElementById('confirmPassword').value;
 
   // Make the fetch request
   fetch('http://102.36.176.228:4445/auth/signup', {
     method: 'POST',
     body: JSON.stringify({
-      name: username,
-      email,
-      password,
+      username: usernameE1,
+      email: emailE1,
+      password: passwordE1,
+      confirmPassword: confirmPasswordE1
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
-    },
+    }
   })
-    .then((response) => response.json())
-    .then((data) => {
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
       console.log(data);
     })
-    .catch((error) => console.error('Error:', error));
+  localStorage.setItem('name', usernameE1);
+  window.location.href = "../html/signin.html";
 });

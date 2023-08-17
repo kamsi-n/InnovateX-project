@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+}
+
+body {
+    background-color: #5B0792;
+    line-height: 1.5;
+}
+
+.unamused {
+    width: 4%;
+    padding: 10px 12px 28px 7px;
+}
+
+.business-failure {
+    width: 40%;
+    margin: -50px 1px 70px -16px;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 11% 20% 8% 20%;
+
+}
+
+.image {
+    margin-left: 20%;
+}
+
+.img {
+    padding: 10px 0px -10px 5px;
+}
+
+.details {
+    margin-left: 55%;
+    margin-top: -45%;
+}
+
+a {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.passingscore {
+    margin-top: 10px;
+}
+
+p.highlight {
+    font-size: 25px;
+    color: #5B0792;
+    line-height: 37.2px;
+    margin-right: -10%;
+    margin-bottom: 10px;
+
+}
+
+.button {
+    border-radius: 2px;
+    outline: 1px solid #5B0792;
+    width: 28%;
+    height: 38px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: 1px 15px;
+    margin: 11px 0px -41px 0px;
+    font-size: 16px;
+    transition: width 0.5s;
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.button:hover,
+.button2:hover,
+.button3:hover {
+    width: 30%;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px;
+    cursor: pointer;
+    background-image: url(../assets/right-arrow.png);
+    background-position: right 10px center;
+}
+
+.button3:hover {
+    width: 30%;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px;
+    cursor: pointer;
+    background-image: url(../assets/chevron.png);
+    background-position: right 15px center;
+}
+
+.button:hover::after,
+.button2:hover::after,
+.button3:hover::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+}
+
+.button2 {
+    border-radius: 2px;
+    outline: 1px solid #5B0792;
+    border: none;
+    width: 25%;
+    height: 38px;
+    margin: -23px 0 10px 160px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: 1px 15px;
+    font-size: 16px;
+    transition: width 0.5s;
+    position: relative;
+    white-space: nowrap;
+}
+
+.button3 {
+    border-radius: 2px;
+    outline: 1px solid #5B0792;
+    width: 28%;
+    height: 38px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: 1px 15px;
+    margin: -13px 0 -41px 0px;
+    font-size: 16px;
+    transition: width 0.5s;
+    position: relative;
+    white-space: nowrap;
+    background-color: #5B0792;
+    color: white;
+}
+
+.card {
+    background-color: white;
+    margin: 8vh 30vh 20vh 40vh;
+    padding: 0.2vh 0vh 20vh 0vh;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .center {
+        margin: 15% auto 8%;
+    }
+
+    .image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .details {
+        margin: 0;
+        text-align: center;
+    }
+
+    .button,
+    .button2,
+    .button3 {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .button:hover,
+    .button2:hover,
+    .button3:hover {
+        background-position: right 5px center;
+        background-size: 14px;
+    }
+
+    .card {
+        margin: 5vh 5vh;
+    }
+}

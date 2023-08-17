@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questions</title>
-    <link rel="stylesheet" href="../css/question.css">
+    <link rel="stylesheet" href="../css/userQuestion.css">
     <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,7 @@
     </header>
 
     <div class="content">
+        <!--
         <div class="card">
             <div class="innerCard">
                 <div class="top-row">
@@ -78,53 +79,13 @@
                 </div>
             </div>
         </div>
-        <a href="../html/user-dashboard.html"><div class="closeBtn"></div></a>
+        <a href="../html/user-dashboard.html">
+            <div class="closeBtn"></div>
+        </a> 
+    -->
     </div>
 
-    <div class="popupContent">
-      <div id="loading"></div>
-
-      <div id="getCodeLink">
-            <img id="close" src="../assets/Frame 1000003679.svg" alt="toprow">
-            <div class="purpleCard">
-                <img class="success" src="../assets/Successmark.svg" alt="">
-                <h3>Publishing  is complete</h3>
-                <p>The “Hist..” quiz has been successfully published into a shareable link</p>
-                <img class="rafiki" src="../assets/rafiki.png" alt="">
-                <button id="send">Send</button>
-            </div>
-            <img id="bottomrow" src="../assets/Frame 1000003680.svg" alt="bottomrow">
-      </div>
-    </div>
-
-    <div id="sendOverlay">
-        <img id="close2" src="../assets/Frame 1000003679.svg" alt="">
-        <div class="whiteCard">
-            <h2>Send quiz via email</h2>
-            <form action="https://formspree.io/f/mleyedek" method="post">
-                <label>
-                    To
-                    <input type="email" name="email" placeholder="Email, comma separated">
-                </label>
-                <label>
-                    Subject
-                    <textarea name="Subject"></textarea>
-                </label>
-                <label>
-                    Message
-                    <textarea name="message" placeholder="I've invited you to take a quiz"></textarea>
-                </label>
-                <button id="sendBtn" type="submit">Send</button>
-            </form>
-        </div>
-        <img id="copyLink" src="../assets/Frame 1000003678.svg" alt="">
-        <div id="sendAlert">
-            <img src="../assets/Icon.svg" alt="">
-            <p>Successful. Sent to:</p>
-        </div>
-    </div>
-
-    <script src="../script/question.js"></script>
+    <script src="../script/userQuestion.js"></script>
 </body>
 
 </html>

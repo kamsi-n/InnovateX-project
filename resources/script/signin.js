@@ -8,33 +8,52 @@ logo.addEventListener('click', () => {
   window.location.href = '../html/home.html';
 });
 
-const svgFiles = [
-  '../assets/svg animated files/Property 1=Variant5.svg',
-  '../assets/svg animated files/Property 1=Variant2.svg',
-  '../assets/svg animated files/Property 1=Variant3.svg',
-  '../assets/svg animated files/Property 1=Variant4.svg',
-];
+const showHideToggle = document.getElementById('showHideToggle');
+const passwordInput = document.getElementById('password');
 
-const svgContainer = document.getElementById('animation1');
-let currentIndex = 0;
+showHideToggle.addEventListener('click', () => {
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    showHideToggle.textContent = 'Hide';
+  } else {
+    passwordInput.type = 'password';
+    showHideToggle.textContent = 'Show';
+  }
+});
 
-setInterval(() => {
-  svgContainer.style.backgroundImage = `url('${svgFiles[currentIndex]}')`;
-  currentIndex = (currentIndex + 1) % svgFiles.length;
-}, 1000);
+form.addEventListener('submit', () => {
 
-const svgFiles2 = [
-  '../assets/svg animated files/Property 1=amico (1).svg',
-  '../assets/svg animated files/Property 1=level 2.svg',
-  '../assets/svg animated files/Property 1=Level 3.svg',
-  '../assets/svg animated files/Property 1=Level 3.svg',
-  '../assets/svg animated files/Property 1=Level 3.svg',
-];
+  const emailE1 = document.getElementById('signInEmail').value;
+  const passwordE1 = document.getElementById('password').value;
 
-const svgContainer2 = document.getElementById('animation2');
-let currentIndex2 = 0;
+  // Make the fetch request
+  fetch('http://102.36.176.228:4445/auth/login', {
+    method: 'POST',
+    body: JSON.stringify({
+      email: emailE1,
+      password: passwordE1,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    }
+  }).then(function (response) {
+    return response.json();
+  })
+    .then(result => {
+      // const jwtToken = result.data; // Assuming the server returns the token in the "token" property
+      // Use the JWT token to access restricted endpoints by including it in the "Authorization" header of subsequent requests
+      // After obtaining the JWT token
 
-setInterval(() => {
-  svgContainer2.style.backgroundImage = `url('${svgFiles2[currentIndex2]}')`;
-  currentIndex2 = (currentIndex2 + 1) % svgFiles2.length;
-}, 1000);
+      if (result.status === 0) {
+        localStorage.setItem('jwtToken', result.data);
+        window.location.href = '../html/home.html';
+        document.getElementById('errorMsg').textContent = '';
+      } else {
+        document.getElementById('errorMsg').textContent = 'Invalid email or password';
+      };
+    })
+    .catch(error => {
+      document.getElementById('errorMsg').textContent = 'Invalid email or password';
+      console.log(error);
+    })
+});

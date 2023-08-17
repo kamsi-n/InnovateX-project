@@ -211,6 +211,13 @@ input::placeholder {
   cursor: pointer;
 }
 
+#errorMsg {
+  font-family: Rubik, sans-serif;
+  color: red;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
 .slot {
   margin-top: 15px;
 }

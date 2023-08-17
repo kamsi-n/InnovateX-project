@@ -61,3 +61,25 @@ sendBtn.addEventListener('click', (event) => {
     window.location.href = '../html/dashboard.html';
   }, 2000);
 });
+
+publish.addEventListener('click', () => {
+  fetch('http://102.36.176.228:4445/questions/add', {
+    method: 'GET',
+    body: JSON.stringify({
+      question: questionE1,
+      options: [option1, option2, option3],
+      point: 10, // You have hardcoded the point value to 10 in the code
+      answer: answerE1
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+      Authorization: `Bearer ${jwtToken}`
+    }
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    })
+});

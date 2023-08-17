@@ -30,7 +30,7 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % texts.length;
 }, 1500);
 
-const logo = document.getElementById('.logo');
+const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {
   window.location.href = 'resources/html/home.html';
 });
@@ -39,7 +39,6 @@ const questions = document.querySelectorAll('.faq-section h5.question');
 
 questions.forEach((question) => {
   question.addEventListener('click', () => {
-    console.log('clicked');
     // Toggle the active class on the clicked question
     question.classList.toggle('active');
     // Get the next sibling element (answer)
@@ -53,9 +52,4 @@ questions.forEach((question) => {
     // Toggle the clicked class on the question
     question.classList.toggle('clicked');
   });
-});
-
-const btn = document.getElementById('testbtn');
-btn.addEventListener('click', () => {
-  console.log('clicked');
 });
