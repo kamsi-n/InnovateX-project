@@ -1,16 +1,16 @@
 const passwordInput = document.getElementById('password');
-const passwordChecker = document.getElementById('passwordChecker');
-const poor = document.getElementById('poor');
-const weak = document.getElementById('weak');
-const strong = document.getElementById('strong');
-const passwordInfo = document.getElementById('passwordInfo');
-
-const poorRegExp = /[a-z]/;
-const weakRegExp = /(?=.*?[0-9])/;
-const strongRegExp = /(?=.*?[#?!@$%^&*_])/;
-const whitespaceRegExp = /^$|\s+/;
-
 passwordInput.addEventListener('input', () => {
+  const passwordChecker = document.getElementById('passwordChecker');
+  const poor = document.getElementById('poor');
+  const weak = document.getElementById('weak');
+  const strong = document.getElementById('strong');
+  const passwordInfo = document.getElementById('passwordInfo');
+
+  const poorRegExp = /[a-z]/;
+  const weakRegExp = /(?=.*?[0-9])/;
+  const strongRegExp = /(?=.*?[#?!@$%^&*_])/;
+  const whitespaceRegExp = /^$|\s+/;
+
   const passwordValue = passwordInput.value;
   const passwordLength = passwordValue.trim().length;
 
@@ -158,8 +158,6 @@ setInterval(() => {
   currentIndex2 = (currentIndex2 + 1) % svgFiles2.length;
 }, 1000);
 
-const form = document.getElementById('form');
-
 function validateForm() {
   const username = document.getElementById('signUpUsername').value;
   const signUpEmail = document.getElementById('signUpEmail').value;
@@ -172,4 +170,43 @@ function validateForm() {
   return false;
 }
 
+const userName = document.getElementById('signUpUsername').value;
+localStorage.setItem('userName', userName);
+
 //form.addEventListener('submit', validateForm);
+const form = document.getElementById('form');
+form.addEventListener("submit", handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
+  const jsonData = JSON.stringify(data);
+  console.log(data);
+
+  fetch("http://102.36.176.228:4445/auth/admin", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    },
+    body: jsonData,
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result);
+      if (result.status === 0) {
+        window.location.href = './resources/html/signin.html';
+      }
+    })
+    .catch((err) => console.log(err));
+};
+
+const logo = document.getElementById('logo');
+logo.addEventListener('click', () => {
+  window.location.href = './resources/html/home.html';
+});
+
+const signInButton = document.querySelector('.signInBtn');
+signInButton.addEventListener('click', () => {
+  window.location.href = './resources/html/signin.html';
+});
+

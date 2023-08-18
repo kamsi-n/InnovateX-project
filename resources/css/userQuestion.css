@@ -285,8 +285,7 @@ nav {
 .one {
   display: flex;
   flex-direction: column;
-  font-size: 1.3vw;
-  font-weight: 600;
+  font-size: 1vw;
   line-height: 120%;
   color: black;
   align-items: left;
@@ -295,14 +294,14 @@ nav {
 
 .one input {
   position: relative;
-  left: -5px;
-  width: 10%;
-  height: 10%;
+  margin-left: -105px;
+  width: 60%;
+  height: 60%;
   margin-bottom: -10px;
 }
 
 .text h1 {
-  font-size: 2vw;
+  font-size: 1vw;
   margin-bottom: 20px;
 }
 

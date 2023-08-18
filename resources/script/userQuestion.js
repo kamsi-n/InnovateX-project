@@ -24,6 +24,34 @@ const timerInterval = setInterval(() => {
   }
 }, 1000);
 
+const option1 = document.getElementById('label1');
+const option2 = document.getElementById('label2');
+const option3 = document.getElementById('label3');
+
+option1.addEventListener('click', () => {
+  option1.style.border = '2px solid red';
+  option2.style.border = '2px solid green';
+  option3.style.border = '2px solid red';
+});
+
+option2.addEventListener('click', () => {
+  option1.style.border = '2px solid red';
+  option2.style.border = '2px solid green';
+  option3.style.border = '2px solid red';
+  document.getElementById('finalPoint').innerHTML = 'Your Point: 100 0f 100';
+});
+
+option3.addEventListener('click', () => {
+  option1.style.border = '2px solid red';
+  option2.style.border = '2px solid green';
+  option3.style.border = '2px solid red';
+});
+
+const submitBtn = document.querySelector('.submit');
+submitBtn.addEventListener('click', () => {
+  window.location.href = '../html/user-dashboard.html';
+});
+/*
 // Retrieve the JWT token from local storage
 const jwtToken = localStorage.getItem('jwtToken');
 
@@ -109,3 +137,4 @@ fetch(url, options)
   .catch(error => {
     console.log('Error', error);
   });
+*/
