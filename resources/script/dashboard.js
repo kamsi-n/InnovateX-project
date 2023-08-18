@@ -68,6 +68,6 @@ logout.addEventListener('click', () => {
   window.location.href = '../html/signin.html';
 });
 
-const usernameE2 = localStorage.getItem('name');
+const usernameE2 = localStorage.getItem('userName');
 const nameE2 = document.querySelector('span');
 nameE2.innerHTML = usernameE2;

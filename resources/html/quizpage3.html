@@ -61,42 +61,45 @@
 
 
             <div class="container-options1">
-                <div class="topRow">
-                    <input type="text" name="question" id="question" placeholder="Question">
-                    <img id="imgIcon" src="../assets/quizpage3-asset/Group 1000003551.svg" alt="">
-                    <img id="dropdown" src="../assets/quizpage3-asset/Frame 1000003647.svg" alt="">
-                </div>
+                <form method="POST" id="form">
+                    <div class="topRow">
+                        <input type="text" name="question" id="question" placeholder="Question">
+                        <img id="imgIcon" src="../assets/quizpage3-asset/Group 1000003551.svg" alt="">
+                        <img id="dropdown" src="../assets/quizpage3-asset/Frame 1000003647.svg" alt="">
+                    </div>
 
-                <div class="question-options">
-                    <ul>
-                        <li><input type="text" name="option1" id="option1" placeholder="Option1"></li>
-                        <li><input type="text" name="option2" id="option2" placeholder="Option2"></li>
-                        <li><input type="text" name="option3" id="option3" placeholder="Option3"></li>
-                    </ul>
-                    <hr>
-                </div>
+                    <div class="question-options">
+                        <ul>
+                            <li><input type="text" name="options" id="option1" placeholder="Option1"></li>
+                            <li><input type="text" name="options" id="option2" placeholder="Option2"></li>
+                            <li><input type="text" name="options" id="option3" placeholder="Option3"></li>
+                        </ul> 
+                        <hr>
+                    </div>
+                    <input type="number" name="point" id="point" placeholder="Point">
+                    <div class="buttom-navbar">
+                        <input type="text" name="answer" id="answer" placeholder="Answer">
+                        
+                        <div class="icons">
+                            <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003549.svg" alt="">
+                            <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003550.svg" alt="">
+                            <img src="../assets/quizpage3-asset/Line 40.svg" alt="">
+                            <p>Required</p>
 
-                <div class="buttom-navbar">
-                    <input type="text" name="answer" id="answer" placeholder="Answer">
-                    <div class="icons">
-                        <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003549.svg" alt="">
-                        <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003550.svg" alt="">
-                        <img src="../assets/quizpage3-asset/Line 40.svg" alt="">
-                        <p>Required</p>
-
-                        <div class="toggle-switch">
-                            <input type="checkbox" id="toggle" class="toggle-input">
-                            <label for="toggle" class="toggle-label"></label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="toggle" class="toggle-input">
+                                <label for="toggle" class="toggle-label"></label>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
 
             <div class="container3">
                 <img class="back" src="../assets/Go-back.svg" alt="go back">
-                <img class="add" src="../assets/add-image.svg" alt="add">
+                <button type="submit" class="add"><img src="../assets/add-image.svg" alt="add"></button>
                 <img class="down" src="../assets/down-image.svg" alt="down">
             </div>
+            </form>
         </div>
 
         <script src="../script/quizpage3.js"></script>

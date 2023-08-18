@@ -20,7 +20,7 @@ showHideToggle.addEventListener('click', () => {
     showHideToggle.textContent = 'Show';
   }
 });
-
+/*
 form.addEventListener('submit', () => {
 
   const emailE1 = document.getElementById('signInEmail').value;
@@ -57,3 +57,42 @@ form.addEventListener('submit', () => {
       console.log(error);
     })
 });
+*/
+
+const form = document.getElementById("form");
+const url = "http://102.36.176.228:4445/auth/login";
+
+form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
+  const jsonData = JSON.stringify(data);
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    },
+    body: jsonData,
+  })
+    .then((response) => response.json())
+    .then(result => {
+      // const jwtToken = result.data; // Assuming the server returns the token in the "token" property
+      // Use the JWT token to access restricted endpoints by including it in the "Authorization" header of subsequent requests
+      // After obtaining the JWT token
+
+      if (result.status === 0) {
+        localStorage.setItem('jwtToken', result.data);
+        window.location.href = '../html/home.html';
+        document.getElementById('errorMsg').textContent = '';
+      } else {
+        document.getElementById('errorMsg').textContent = 'Invalid email or password';
+      };
+    })
+    .catch(error => {
+      document.getElementById('errorMsg').textContent = 'Invalid email or password';
+      console.log(error);
+    })
+};

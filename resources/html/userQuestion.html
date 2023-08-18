@@ -1,91 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Questions</title>
-    <link rel="stylesheet" href="../css/userQuestion.css">
-    <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="../css/userQuestion.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo">
-            <button id="navButton" onclick="toggle()"></button>
-            <div id="rightSide">
-                <button id="enterCode"><a href="../html/entercode.html">Enter Code</a></button>
-                <button id="createQuiz">Create Quiz</button>
-                <img src="../assets/bell (1).png" id="notifsIcon" alt="notifications icon">
-                <img src="../assets/User icon.png" id="profilePic" alt="profile picture">
-            </div>
-        </nav>
+      <nav>
+        <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo" />
+        <button id="navButton" onclick="toggle()"></button>
+        <div id="rightSide">
+          <button id="enterCode">
+            <a href="../html/entercode.html">Enter Code</a>
+          </button>
+          <button id="createQuiz">Create Quiz</button>
+          <img
+            src="../assets/bell (1).png"
+            id="notifsIcon"
+            alt="notifications icon"
+          />
+          <img
+            src="../assets/User icon.png"
+            id="profilePic"
+            alt="profile picture"
+          />
+        </div>
+      </nav>
     </header>
 
     <div class="content">
-        <!--
-        <div class="card">
-            <div class="innerCard">
-                <div class="top-row">
-                    <div class="btn1">
-                        <img src="../assets/material-symbols_dashboard-outline.png" alt="">
-                        <p>Question List</p>
-                    </div>
-                    <div class="db-btn">
-                        <img src="../assets/material-symbols_dashboard-outline.png" alt="">
-                    </div>
-                    <p id="timer">00:00</p>
-                </div>
-
-                <div class="questionCard">
-                    <div class="text">
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente a laborum ullam
-                            voluptates mollitia ducimus dicta, aspernatur tempora minus, inventore dolores adipisci vel
-                            esse?</h1>
-                        <div class="one">
-                            <input type="radio" name="options" id="option1">
-                            <label for="options">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                                reprehenderit!</label>
-                        </div>
-                        <div class="one">
-                            <input type="radio" name="options" id="option2">
-                            <label for="options">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
-                                vel.</label>
-                        </div>
-                        <div class="one">
-                            <input type="radio" name="options" id="option3">
-                            <label for="options">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Necessitatibus, alias!</label>
-                        </div>
-                    </div>
-                    <div class="image"></div>
-                </div>
-
-                <div class="bottom-row">
-                    <div class="point">
-                        <p>Your Point: 30 0f 100</p>
-                    </div>
-                    <div class="q-number">
-                        <p>Question 4 of 10</p>
-                    </div>
-                    <div class="submit">
-                        <img src="../assets/home-icons/dashboard (2).png" alt="">
-                        <p>Submit</p>
-                    </div>
-                </div>
+      <div class="card">
+        <div class="innerCard">
+          <div class="top-row">
+            <div class="btn1">
+              <img
+                src="../assets/material-symbols_dashboard-outline.png"
+                alt=""
+              />
+              <p>Question List</p>
             </div>
+            <div class="db-btn">
+              <img
+                src="../assets/material-symbols_dashboard-outline.png"
+                alt=""
+              />
+            </div>
+            <p id="timer">00:00</p>
+          </div>
+
+          <div class="questionCard">
+            <div class="text">
+              <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                sapiente a laborum ullam voluptates mollitia ducimus dicta,
+                aspernatur tempora minus, inventore dolores adipisci vel esse?
+              </h1>
+              <div class="one">
+                <input type="radio" name="options" id="option1" />
+                <label for="option1" id="label1"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eius, reprehenderit!</label
+                >
+              </div>
+              <div class="one">
+                <input type="radio" name="options" id="option2" />
+                <label for="option2" id="label2"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto, vel.</label
+                >
+              </div>
+              <div class="one">
+                <input type="radio" name="options" id="option3" />
+                <label for="option3" id="label3"
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Necessitatibus, alias!</label
+                >
+              </div>
+            </div>
+
+            <div class="image"></div>
+          </div>
+
+          <div class="bottom-row">
+            <div class="point">
+              <p id="finalPoint">Your Point: 0 0f 100</p>
+            </div>
+            <div class="q-number">
+              <p>Question 1 of 10</p>
+            </div>
+            <div class="submit">
+              <img src="../assets/home-icons/dashboard (2).png" alt="" />
+              <p>Submit</p>
+            </div>
+          </div>
         </div>
-        <a href="../html/user-dashboard.html">
-            <div class="closeBtn"></div>
-        </a> 
-    -->
+      </div>
+      <a href="../html/user-dashboard.html">
+        <div class="closeBtn"></div>
+      </a>
     </div>
 
     <script src="../script/userQuestion.js"></script>
-</body>
-
+  </body>
 </html>

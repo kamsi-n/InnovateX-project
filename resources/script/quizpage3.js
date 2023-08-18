@@ -65,6 +65,7 @@ back.addEventListener('click', () => {
 });
 
 const add = document.querySelector('.add');
+/*
 add.addEventListener('click', () => {
   const inputFields = document.querySelectorAll('input');
 
@@ -72,13 +73,9 @@ add.addEventListener('click', () => {
   inputFields.forEach((inputField) => {
     inputField.value = '';
   });
-});
-
-
-// Retrieve the JWT token from local storage
+}); */
+/*
 const jwtToken = localStorage.getItem('jwtToken');
-// Use the token for further requests
-console.log('JWT Token:', jwtToken);
 
 add.addEventListener('click', () => {
 
@@ -102,9 +99,44 @@ add.addEventListener('click', () => {
     }
   })
     .then(function (response) {
-      return response.json()
+      return response.json();
     })
     .then(function (data) {
       console.log(data);
     })
-});
+});*/
+
+const jwtToken = localStorage.getItem('jwtToken');
+const form = document.getElementById('form');
+form.addEventListener("submit", handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+  const questionE1 = document.getElementById('question').value;
+  const option1 = document.getElementById('option1').value;
+  const option2 = document.getElementById('option2').value;
+  const option3 = document.getElementById('option3').value;
+  const answerE1 = document.getElementById('answer').value;
+  const point = document.getElementById('point').value;
+  const data = {
+    question: questionE1,
+    options: [option1, option2, option3],
+    point: point, // You have hardcoded the point value to 10 in the code
+    answer: answerE1
+  };
+  const jsonData = JSON.stringify(data);
+  console.log(data);
+
+  fetch("http://102.36.176.228:4445/questions/add", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+      Authorization: 'Bearer ' + jwtToken,
+    },
+    body: jsonData,
+  })
+    .then((response) => response.jsonData())
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((err) => console.log(err));
+};
