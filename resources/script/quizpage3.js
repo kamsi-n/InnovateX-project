@@ -98,11 +98,11 @@ add.addEventListener('click', () => {
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
-      Authorization: `Bearer ${jwtToken}`
+      Authorization: 'Bearer' + jwtToken,
     }
   })
     .then(function (response) {
-      return response.json();
+      return response.json()
     })
     .then(function (data) {
       console.log(data);

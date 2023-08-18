@@ -218,6 +218,26 @@ input::placeholder {
   margin-top: 5px;
 }
 
+#loginAlert {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeEffect 5s ease-in-out 0.3s alternate both;
+  visibility: hidden;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .slot {
   margin-top: 15px;
 }
