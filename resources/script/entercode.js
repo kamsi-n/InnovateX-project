@@ -7,12 +7,12 @@ start.addEventListener('click', () => {
     countdown.style.visibility = 'visible';
   }, 2000);
   setTimeout(() => {
-    window.location.href = '../html/userQuestion.html';
+    window.location.href = '../html/descriptionPage.html';
   }, 5000);
 });
 
 const display = document.querySelector('h2');
-const displayText = ['Get Ready', '3', '2', '1'];
+const displayText = ['Get Ready'];
 let currentIndex = 0;
 setInterval(() => {
   display.innerHTML = displayText[currentIndex];

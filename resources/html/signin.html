@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
     <link rel="stylesheet" href="../css/signin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +26,9 @@
         </nav>
     </header>
     <hr>
+    <img src="../assets/Alert (2).svg" alt="successful login" id="loginAlert">
     <div class="container">
-        <form>
+        <form id="form" method="post">
             <img class="profilePic" src="../assets/User icon.png" alt="profile picture">
             <h2>Welcome Back</h2>
             <p class="signInDesc">Sign in your account</p>
@@ -42,7 +44,9 @@
                 <span id="showHideToggle">Show</span>
             </div>
 
-            <input type="submit" id="signInBtn" value="Sign In">
+            <p id="errorMsg"></p>
+
+            <button id="signInBtn">Sign In</button>
         </form>
     </div>
 

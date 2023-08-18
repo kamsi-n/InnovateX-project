@@ -43,3 +43,7 @@ toggle.addEventListener('click', () => {
     toggle.style.left = '21%';
   }
 });
+
+const title = localStorage.getItem('title');
+const head = document.querySelector('title1');
+head.innerHTML = title;

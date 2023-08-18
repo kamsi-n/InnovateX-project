@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Quiz</title>
     <link rel="stylesheet" href="../css/quizpage3.css">
     <link rel="icon" type="image/x-icon" href="../assets/Logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
+
     <header>
         <nav>
             <img src="../assets/LogoII.svg" id="logo" alt="QuizWhiz logo">
@@ -32,18 +34,17 @@
                         class="icon" data-src-hover="../assets/home-icons/Vector (3).svg" alt="dashboard">Dashboard</a>
             </li>
             <li><a class="myQuizzes" href="../html/user-dashboard.html"><img
-                src="../assets/user-dashboard-icons/list (1).png" class="icon"
-                data-src-hover="../assets/user-dashboard-icons/list.png" alt="myQuizzes">My Quizzes</a>
+                        src="../assets/user-dashboard-icons/list (1).png" class="icon"
+                        data-src-hover="../assets/user-dashboard-icons/list.png" alt="myQuizzes">My Quizzes</a>
             </li>
-            <li id="logoutBtn"><a class="logout" ><img
-                src="../assets/mdi_logout.svg" class="icon"
-                data-src-hover="../assets/logout.png" alt="logout">Log Out</a>
+            <li id="logoutBtn"><a class="logout"><img src="../assets/mdi_logout.svg" class="icon"
+                        data-src-hover="../assets/logout.png" alt="logout">Log Out</a>
             </li>
         </ul>
     </div>
 
-   
-    
+
+
     <img id="toggleArrow" src="../assets/right-arrow-black-triangle.png" alt="toggle arrow">
 
     <div class="container">
@@ -54,114 +55,51 @@
             <h3>Questions</h3>
 
             <div class="buttons">
-                <button class="button1">Preview</button>   
-                <button class="button2">Publish</button>   
+                <button class="button1">Preview</button>
+                <button class="button2">Publish</button>
             </div>
 
-    
-        <div class="container-options1">
-            <div class="topRow">
-                <input type="text" name="question" id="question" placeholder="Question">
-                <img id="imgIcon" src="../assets/quizpage3-asset/Group 1000003551.svg" alt="">
-                <img id="dropdown" src="../assets/quizpage3-asset/Frame 1000003647.svg" alt="">
-            </div>
 
-            <div class="question-options">
-                <ul>
-                <li><input type="text" name="option1" id="option1" placeholder="Option1"></li>
-                <li><input type="text" name="option2" id="option2" placeholder="Option2"></li>
-                <li><input type="text" name="option3" id="option3" placeholder="Option3"></li>
-                <li id="addOption">Add Option</li>
-                </ul>
-                <hr>
-            </div>
+            <div class="container-options1">
+                <div class="topRow">
+                    <input type="text" name="question" id="question" placeholder="Question">
+                    <img id="imgIcon" src="../assets/quizpage3-asset/Group 1000003551.svg" alt="">
+                    <img id="dropdown" src="../assets/quizpage3-asset/Frame 1000003647.svg" alt="">
+                </div>
 
-            <div class="buttom-navbar">
-                <div class="icons">
-                    <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003549.svg" alt="">
-                    <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003550.svg" alt="">
-                    <img src="../assets/quizpage3-asset/Line 40.svg" alt="">
-                    <p>Required</p>
-                    
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="toggle" class="toggle-input">
-                        <label for="toggle" class="toggle-label"></label>
+                <div class="question-options">
+                    <ul>
+                        <li><input type="text" name="option1" id="option1" placeholder="Option1"></li>
+                        <li><input type="text" name="option2" id="option2" placeholder="Option2"></li>
+                        <li><input type="text" name="option3" id="option3" placeholder="Option3"></li>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div class="buttom-navbar">
+                    <input type="text" name="answer" id="answer" placeholder="Answer">
+                    <div class="icons">
+                        <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003549.svg" alt="">
+                        <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003550.svg" alt="">
+                        <img src="../assets/quizpage3-asset/Line 40.svg" alt="">
+                        <p>Required</p>
+
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="toggle" class="toggle-input">
+                            <label for="toggle" class="toggle-label"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container-options1">
-            <div class="topRow">
-                <input type="text" name="question" id="question" placeholder="Question">
-                <img id="imgIcon" src="../assets/quizpage3-asset/Group 1000003551.svg" alt="">
-                <img id="dropdown" src="../assets/quizpage3-asset/Frame 1000003647.svg" alt="">
-            </div>
-
-            <div class="question-options">
-                <ul>
-                <li><input type="text" name="option1" id="option1" placeholder="Option1"></li>
-                <li><input type="text" name="option2" id="option2" placeholder="Option2"></li>
-                <li><input type="text" name="option3" id="option3" placeholder="Option3"></li>
-                <li id="addOption">Add Option</li>
-                </ul>
-                <hr>
-            </div>
-
-            <div class="buttom-navbar">
-                <div class="icons">
-                    <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003549.svg" alt="">
-                    <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003550.svg" alt="">
-                    <img src="../assets/quizpage3-asset/Line 40.svg" alt="">
-                    <p>Required</p>
-                    
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="toggle" class="toggle-input">
-                        <label for="toggle" class="toggle-label"></label>
-                    </div>
-                </div>
+            <div class="container3">
+                <img class="back" src="../assets/Go-back.svg" alt="go back">
+                <img class="add" src="../assets/add-image.svg" alt="add">
+                <img class="down" src="../assets/down-image.svg" alt="down">
             </div>
         </div>
 
-        <div class="container-options1">
-            <div class="topRow">
-                <input type="text" name="question" id="question" placeholder="Question">
-                <img id="imgIcon" src="../assets/quizpage3-asset/Group 1000003551.svg" alt="">
-                <img id="dropdown" src="../assets/quizpage3-asset/Frame 1000003647.svg" alt="">
-            </div>
-
-            <div class="question-options">
-                <ul>
-                <li><input type="text" name="option1" id="option1" placeholder="Option1"></li>
-                <li><input type="text" name="option2" id="option2" placeholder="Option2"></li>
-                <li><input type="text" name="option3" id="option3" placeholder="Option3"></li>
-                <li id="addOption">Add Option</li>
-                </ul>
-                <hr>
-            </div>
-
-            <div class="buttom-navbar">
-                <div class="icons">
-                    <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003549.svg" alt="">
-                    <img class="iconimg" src="../assets/quizpage3-asset/Group 1000003550.svg" alt="">
-                    <img src="../assets/quizpage3-asset/Line 40.svg" alt="">
-                    <p>Required</p>
-                    
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="toggle" class="toggle-input">
-                        <label for="toggle" class="toggle-label"></label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container3">
-            <img class="back" src="../assets/Go-back.svg" alt="go back">
-            <img class="add" src="../assets/add-image.svg" alt="add">
-            <img class="down" src="../assets/down-image.svg" alt="down">
-        </div>
-    </div>
-
-    <script src="../script/quizpage3.js"></script>
+        <script src="../script/quizpage3.js"></script>
 </body>
+
 </html>
